@@ -26,13 +26,16 @@ export const register: Register = on => {
       name: 'agenten',
       description: 'Seitenleiste mit allen KI-Agenten öffnen',
     })
-    void $.ui.open({ id: PANE, title: TITEL })
+    const r = await $.ui.open({ id: PANE, title: TITEL })
+    $.ui.status(r.isPlaced ? '🧭 KI-Agenten-Leiste offen' : '🧭 /agenten – Agentenliste')
     return next(e)
   })
 
   on('command.run', { command: 'agenten' }, async $ => {
-    await $.ui.open({ id: PANE, title: TITEL })
-    return { text: 'Agenten-Leiste geöffnet.' }
+    const r = await $.ui.open({ id: PANE, title: TITEL, focus: true })
+    if (r.isPlaced) return { text: 'Agenten-Leiste geöffnet.' }
+    const liste = BEREICHE.map(([b, a]) => `${b}\n` + a.map(n => `  • ${n}`).join('\n')).join('\n\n')
+    return { text: `Die App zeigt hier keine Leiste an – hier die Liste:\n\n${liste}\n\nAufruf: „Nutze den Agenten „Name“: …“` }
   })
 
   on('ui.render', { component: 'Pane', requestId: PANE }, async ($, e) => {
