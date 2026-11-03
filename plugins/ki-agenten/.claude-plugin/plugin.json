@@ -1,0 +1,1 @@
+{ "name": "ki-agenten", "version": "0.1.0", "description": "Seitenleiste mit allen KI-Agenten der Firma, nach Bereichen sortiert; ein Klick setzt den Auftrag ins Eingabefeld.", "license": "MIT", "author": { "name": "Dennis Halverscheid" }, "types": "./types/index.d.ts" }
