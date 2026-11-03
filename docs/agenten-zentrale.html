@@ -1,0 +1,230 @@
+<title>Agenten-Zentrale</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: kompakte Werkzeugleiste oben (Suche + Bereichs-Chips), darunter Agenten-Karten im Raster, gruppiert nach Bereich */
+:root{
+  --bg:#F6F7F5; --surface:#FFFFFF; --ink:#16201D; --muted:#5E6B66; --line:#DDE3E0;
+  --accent:#0F6B5C; --accent-soft:#E2F0EC; --star:#B7791F;
+  --f-display:"Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --f-body:"IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+  --f-mono:"IBM Plex Mono", ui-monospace, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+  --bg:#111715; --surface:#18201D; --ink:#E6ECE9; --muted:#9AA8A2; --line:#2A3531;
+  --accent:#5CC7B0; --accent-soft:#1C332D; --star:#E3B04B; color-scheme:dark }}
+:root[data-theme="dark"]{
+  --bg:#111715; --surface:#18201D; --ink:#E6ECE9; --muted:#9AA8A2; --line:#2A3531;
+  --accent:#5CC7B0; --accent-soft:#1C332D; --star:#E3B04B; color-scheme:dark }
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:15px;line-height:1.5;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:20px 48px}
+.wrap{max-width:1120px;margin:0 auto;display:flex;flex-direction:column;gap:20px}
+header{display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:12px}
+h1{font-family:var(--f-display);font-weight:700;font-size:clamp(1.6rem,3.5vw,2.2rem);margin:0;letter-spacing:-.01em;text-wrap:balance}
+.sub{color:var(--muted);margin:4px 0 0;max-width:62ch}
+.count{font-family:var(--f-mono);font-size:.85rem;color:var(--muted);font-variant-numeric:tabular-nums}
+.tools{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);padding-block:8px;display:flex;flex-direction:column;gap:10px;border-bottom:1px solid var(--line)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+#q{width:100%;font:inherit;font-size:1rem;padding:10px 14px;border:1px solid var(--line);border-radius:8px;background:var(--surface);color:var(--ink)}
+#q:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+.chips{display:flex;gap:6px;overflow-x:auto;padding-bottom:2px;scrollbar-width:thin}
+.chip{flex:none;font:inherit;font-size:.85rem;padding:5px 11px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer;white-space:nowrap}
+.chip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--bg)}
+.chip:focus-visible,.card:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.how{font-size:.9rem;color:var(--muted);margin:0}
+.how code{font-family:var(--f-mono);background:var(--accent-soft);color:var(--ink);padding:1px 6px;border-radius:4px}
+section{display:flex;flex-direction:column;gap:10px}
+h2{font-family:var(--f-display);font-weight:600;font-size:1.15rem;margin:8px 0 0;display:flex;align-items:baseline;gap:8px}
+h2 small{font-family:var(--f-mono);font-weight:400;font-size:.8rem;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:10px}
+.card{all:unset;box-sizing:border-box;display:flex;flex-direction:column;gap:4px;min-width:0;padding:12px 14px;background:var(--surface);border:1px solid var(--line);border-radius:8px;cursor:pointer;transition:border-color .15s}
+.card:hover{border-color:var(--accent)}
+.name{font-weight:600;display:flex;gap:6px;align-items:baseline;flex-wrap:wrap}
+.tag{font-family:var(--f-mono);font-size:.7rem;letter-spacing:.04em;text-transform:uppercase;padding:0 5px;border-radius:3px;border:1px solid currentColor}
+.tag.star{color:var(--star)} .tag.de{color:var(--accent)}
+.desc{color:var(--muted);font-size:.88rem}
+.act{font-family:var(--f-mono);font-size:.75rem;color:var(--accent);margin-top:2px}
+.card.done .act{font-weight:500}
+.empty{color:var(--muted);padding:24px 0}
+.note{border-top:1px solid var(--line);padding-top:16px;color:var(--muted);font-size:.88rem;display:flex;flex-direction:column;gap:6px}
+.note a{color:var(--accent)}
+#sel{position:fixed;left:-9999px}
+@media (prefers-reduced-motion:reduce){.card{transition:none}}
+</style>
+
+<div class="wrap">
+  <header>
+    <div>
+      <h1>Agenten-Zentrale</h1>
+      <p class="sub">Alle KI-Agenten aus dem Projekt <strong>digitalisierung-firma</strong>. Karte anklicken, dann ist der Aufruf kopiert. Im Claude-Chat einfügen und den Auftrag dahinterschreiben.</p>
+    </div>
+    <span class="count" id="count"></span>
+  </header>
+
+  <div class="tools">
+    <input id="q" type="search" placeholder="Suchen, z. B. E-Mail, LinkedIn, Buchhaltung, DSGVO …" autocomplete="off" aria-label="Agenten durchsuchen">
+    <div class="chips" id="chips" role="toolbar" aria-label="Bereich filtern"></div>
+    <p class="how">Kopiert wird: <code>Nutze den Agenten „Name“: </code> · <span class="tag star">Start</span> = Empfehlung zum Einstieg · <span class="tag de">DE</span> = auf Deutsch und für den deutschen Markt geschrieben</p>
+  </div>
+
+  <div id="list"></div>
+
+  <div class="note">
+    <span>Die Agenten liegen im Repository unter <code>.claude/agents/</code> und stehen in jeder Claude-Code-Sitzung dieses Projekts bereit.</span>
+    <span>ChatGPT-Fassungen (54 deutsche Custom-GPT-Vorlagen): <a href="https://github.com/Dennishalverscheid/digitalisierung-firma/tree/claude/ki-agenten-team/chatgpt-gpts" target="_blank" rel="noopener">chatgpt-gpts auf GitHub</a></span>
+    <span>Grundlage: <a href="https://github.com/msitarzewski/agency-agents" target="_blank" rel="noopener">msitarzewski/agency-agents</a> (MIT-Lizenz)</span>
+  </div>
+</div>
+<textarea id="sel" aria-hidden="true" tabindex="-1"></textarea>
+
+<script>
+const S="star", D="de";
+const DATA=[
+ ["Vertrieb",[
+  ["Sales Outreach","B2B-Neukundenakquise, Nachfassen, Einwände behandeln",[S]],
+  ["Proposal Strategist","Angebote und Ausschreibungen, die überzeugen",[S]],
+  ["Offer & Lead Gen Strategist","Unwiderstehliche Angebote und Lead-Magnete",[S]],
+  ["Outbound Strategist","Zielkundenprofil und mehrstufige Akquise-Sequenzen"],
+  ["Discovery Coach","Bessere Fragen im Erstgespräch, echten Bedarf finden"],
+  ["Deal Strategist","Große B2B-Deals bewerten und gewinnen"],
+  ["Account Strategist","Bestandskunden ausbauen, Jahresgespräche"],
+  ["Sales Engineer","Technische Vorführungen, Testphasen, Wettbewerbsvergleich"],
+  ["Pipeline Analyst","Pipeline analysieren, Umsatz prognostizieren"],
+  ["Pricing Analyst","Preismodelle, Wettbewerbspreise, Margen"],
+  ["Customer Success Manager","Onboarding, Kündigungen verhindern, Verlängerungen"],
+  ["Sales Coach","Vertriebsmitarbeiter entwickeln, Gespräche auswerten"]]],
+ ["Content & Marketing",[
+  ["Content Creator","Redaktionsplan, Texte und Storytelling für alle Kanäle",[S]],
+  ["LinkedIn Content Creator","LinkedIn-Posts und Personal Branding",[S]],
+  ["SEO Specialist","Bei Google gefunden werden",[S]],
+  ["Email Marketing Strategist","Newsletter und automatische E-Mail-Strecken"],
+  ["Social Media Strategist","Kanalübergreifende Social-Media-Strategie"],
+  ["Instagram Curator","Feed, Reels, Stories, Karussells"],
+  ["TikTok Strategist","Kurzvideos, Trends, Employer Branding"],
+  ["Video Optimization Specialist","YouTube: Titel, Thumbnails, Zuschauerbindung"],
+  ["PR & Communications Manager","Pressemitteilungen, Medienarbeit, Krisenkommunikation"],
+  ["Growth Hacker","Wachstum durch Experimente und Trichter-Optimierung"],
+  ["Carousel Growth Engine","Karussell-Posts für TikTok und Instagram"],
+  ["Short-Video Editing Coach","Dreh und Schnitt von Reels und Shorts"],
+  ["Podcast Strategist","Firmen-Podcast im deutschsprachigen Raum",[D]],
+  ["Global Podcast Strategist","Podcast-Positionierung, Reichweite, Vermarktung"],
+  ["Twitter Engager","Posts, Threads und Gespräche auf X"],
+  ["X/Twitter Intelligence Analyst","Themen und Wettbewerber auf X beobachten"],
+  ["Reddit Community Builder","Vertrauen in Foren und Communitys aufbauen"],
+  ["Developer Community Builder","Communitys auf Discord, GitHub und in Foren"],
+  ["Book Co-Author","Fachbuch oder E-Book als Experten-Positionierung"],
+  ["AEO Foundations Architect","Website für KI-Suchen lesbar machen (llms.txt)"],
+  ["Agentic Search Optimizer","Prüfen, ob KI-Agenten auf der Website buchen und kaufen können"],
+  ["AI Citation Strategist","Von ChatGPT, Gemini und Perplexity empfohlen werden"],
+  ["App Store Optimizer","App-Store-Texte und Keywords"],
+  ["Cross-Border E-Commerce Specialist","Verkauf über Marktplätze und ins Ausland"],
+  ["Livestream Commerce Coach","Live-Shopping und Live-Formate im DACH-Raum",[D]],
+  ["Brand Guardian","Markenkern, Tonalität, einheitlicher Auftritt"],
+  ["Visual Storyteller","Präsentationen, Infografiken, Bildkonzepte"],
+  ["Image Prompt Engineer","Prompts für KI-Bildgeneratoren"],
+  ["Inclusive Visuals Specialist","KI-Bilder ohne Stereotype"],
+  ["Trend Researcher","Markt-, Trend- und Wettbewerbsanalyse"],
+  ["Feedback Synthesizer","Kundenfeedback auswerten und Prioritäten ableiten"]]],
+ ["Paid Media",[
+  ["PPC Campaign Strategist","Google- und Microsoft-Ads aufbauen"],
+  ["Paid Social Strategist","Werbung auf Meta, LinkedIn und TikTok"],
+  ["Ad Creative Strategist","Anzeigentexte, Hooks, Kreativ-Tests"],
+  ["Paid Media Auditor","Werbekonten auf Budget-Verschwendung prüfen"],
+  ["Programmatic & Display Buyer","Display-, Video- und Retargeting-Werbung"],
+  ["Search Query Analyst","Suchbegriffe auswerten, Ausschlüsse finden"],
+  ["Tracking & Measurement Specialist","GA4, Tag Manager, Conversion-Tracking"]]],
+ ["Teamführung & Personal",[
+  ["Chief of Staff","Rechte Hand der Geschäftsführung: priorisieren, koordinieren",[S]],
+  ["Change Management Consultant","Das Team durch die Digitalisierung führen",[S]],
+  ["Organizational Psychologist","Teamdynamik, Motivation, Konflikte, Kultur",[S]],
+  ["Corporate Training Designer","Schulungen und Lernprogramme"],
+  ["HR Onboarding","Einarbeitung neuer Mitarbeiter"],
+  ["Recruitment Specialist","Stellenanzeigen nach AGG, Auswahl, Interviews",[D]],
+  ["Senior Project Manager","Aufgaben planen, realistischer Umfang"],
+  ["Project Shepherd","Projekte über Abteilungen hinweg koordinieren"],
+  ["Sprint Prioritizer","Aufgaben priorisieren, Kapazitäten verteilen"]]],
+ ["Office",[
+  ["E-Mail-Manager","Posteingang sortieren, Antworten entwerfen, To-dos finden",[S,D]],
+  ["Meeting Notes Specialist","Protokoll: Entscheidungen, To-dos, offene Fragen",[S]],
+  ["Document Generator","Word-, Excel-, PowerPoint- und PDF-Dateien",[S]],
+  ["Executive Summary Generator","Komplexes auf einer Seite für die Chefetage",[S]],
+  ["Customer Service","Kundenanfragen und Beschwerden beantworten"],
+  ["Support Responder","Support über mehrere Kanäle, FAQ"],
+  ["Legal Document Review","Verträge zusammenfassen, Risiken markieren"],
+  ["Analytics Reporter","Dashboards, Kennzahlen, Auswertungen"],
+  ["Report Distribution Agent","Berichte automatisch verteilen"],
+  ["Sales Data Extraction Agent","Kennzahlen aus Excel-Dateien auslesen"],
+  ["Data Consolidation Agent","Vertriebsdaten in Dashboards zusammenführen"],
+  ["Email Intelligence Engineer","E-Mail-Verläufe in strukturierte Daten umwandeln"]]],
+ ["Finanzen",[
+  ["Bookkeeper & Controller","Buchhaltung, Abstimmungen, Monatsabschluss",[S]],
+  ["Finance Tracker","Budget und Kennzahlen im Blick"],
+  ["FP&A Analyst","Budgetplanung, Soll-Ist, Prognosen"],
+  ["Financial Analyst","Finanzmodelle und Szenarien"],
+  ["Tax Strategist","Steuerplanung (ersetzt keinen Steuerberater)"],
+  ["Accounts Payable Agent","Lieferantenrechnungen und Zahlungen"]]],
+ ["Digitalisierung & Prozesse",[
+  ["Automation Governance Architect","Automatisierungen mit n8n prüfen und planen",[S]],
+  ["Workflow Architect","Abläufe vollständig mit allen Sonderfällen abbilden",[S]],
+  ["Workflow Optimizer","Bestehende Abläufe verbessern und automatisieren"],
+  ["Operations Manager","Prozesse, Kapazitäten, Kennzahlen, Lieferanten",[S]],
+  ["Business Strategist","Strategie, Geschäftsmodell, Wachstum"],
+  ["Supply Chain Strategist","Einkauf, Lieferanten, Lager, E-Rechnung",[D]],
+  ["Agents Orchestrator","Mehrere Agenten in einem Ablauf koordinieren"],
+  ["MCP Builder","Eigene Anbindungen an Firmen-Tools bauen"]]],
+ ["Recht & Datenschutz",[
+  ["Data Privacy Officer","DSGVO: Verarbeitungsverzeichnis, AV-Verträge, Datenpannen",[S]],
+  ["Legal Compliance Checker","Prüft Abläufe und Inhalte auf Rechtskonformität"],
+  ["Compliance Auditor","Audits nach ISO 27001 und SOC 2 vorbereiten"]]]
+];
+const total=DATA.reduce((n,[,a])=>n+a.length,0);
+const chips=document.getElementById("chips"), list=document.getElementById("list"), q=document.getElementById("q");
+let bereich="Alle";
+try{ bereich=localStorage.getItem("agz-bereich")||"Alle"; }catch(e){}
+function chip(name,n){
+  const b=document.createElement("button"); b.className="chip"; b.type="button"; b.id="chip-"+name.replace(/\W+/g,"-");
+  b.textContent=n!=null?`${name} · ${n}`:name; b.setAttribute("aria-pressed",String(bereich===name));
+  b.onclick=()=>{bereich=name; try{localStorage.setItem("agz-bereich",name)}catch(e){} render();};
+  return b;
+}
+function norm(s){return s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,"")}
+async function copy(text,card){
+  let ok=false;
+  try{ await navigator.clipboard.writeText(text); ok=true; }catch(e){
+    const t=document.getElementById("sel"); t.value=text; t.select(); try{ ok=document.execCommand("copy"); }catch(_){}
+  }
+  const act=card.querySelector(".act"); const old=act.textContent;
+  card.classList.add("done"); act.textContent= ok ? "Kopiert. Jetzt im Chat einfügen" : "Bitte markieren und kopieren: "+text;
+  setTimeout(()=>{card.classList.remove("done"); act.textContent=old;}, ok?2200:6000);
+}
+function render(){
+  chips.replaceChildren(chip("Alle",total), ...DATA.map(([b,a])=>chip(b,a.length)));
+  const term=norm(q.value.trim()); let shown=0; list.replaceChildren();
+  for(const [b,agents] of DATA){
+    if(bereich!=="Alle" && bereich!==b) continue;
+    const hits=agents.filter(([n,d])=>!term || norm(n+" "+d+" "+b).includes(term));
+    if(!hits.length) continue;
+    shown+=hits.length;
+    const sec=document.createElement("section");
+    sec.innerHTML=`<h2>${b} <small>${hits.length}</small></h2><div class="grid"></div>`;
+    const grid=sec.querySelector(".grid");
+    for(const [n,d,tags=[]] of hits){
+      const c=document.createElement("button"); c.type="button"; c.className="card";
+      c.innerHTML=`<span class="name"></span><span class="desc"></span><span class="act">Aufruf kopieren</span>`;
+      const nm=c.querySelector(".name"); nm.append(n);
+      if(tags.includes(S)){const t=document.createElement("span");t.className="tag star";t.textContent="Start";nm.append(t)}
+      if(tags.includes(D)){const t=document.createElement("span");t.className="tag de";t.textContent="DE";nm.append(t)}
+      c.querySelector(".desc").textContent=d;
+      c.onclick=()=>copy(`Nutze den Agenten „${n}“: `,c);
+      grid.append(c);
+    }
+    list.append(sec);
+  }
+  if(!shown){ const p=document.createElement("p"); p.className="empty"; p.textContent="Kein Agent passt zur Suche. Anderen Begriff versuchen oder Bereich auf „Alle“ stellen."; list.append(p); }
+  document.getElementById("count").textContent = shown===total ? `${total} Agenten` : `${shown} von ${total}`;
+}
+q.addEventListener("input",render);
+render();
+</script>
