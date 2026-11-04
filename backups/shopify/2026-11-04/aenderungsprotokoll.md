@@ -193,3 +193,10 @@ Hersteller vorher uneinheitlich, Produkttyp vorher überall leer.
 - Produkt 7536806297696: SEO-Beschreibung „Nappaleder Schlüsselcover für Ihren BMW Autoschlüssel in Türkis oder Wunschfarbe – handgefertigt von PS-Sattlerei. Schützen Sie Ihren Schlüssel stilvoll & sicher.“ (162 Zeichen).
 
 **Nachher:** Die neuen Werte stehen in `docs/ps-sattlerei-seo-plan.md`, Abschnitt 4 bzw. 8. Zurücksetzen: die alten Werte per `collectionUpdate`/`productUpdate` wieder eintragen.
+
+## Paket B – Rollout (04.11.2026, Freigabe Inhaber im Chat)
+
+Betrifft 63 aktive Produkte (ohne die 2 Testprodukte, Entwürfe unverändert). Je Produkt: Titel, Handle (+301-Weiterleitung über `redirectNewHandle`), SEO-Titel, SEO-Beschreibung und Alt-Texte aller Bilder (162).
+- **Alt- und Neuwerte je Produkt:** `paket-b-rollout.json` (Felder `old_title`, `old_handle` → `title`, `handle`, `seoT`, `seoD`, `alts`).
+- **Vorher-Zustand:** Handles, SEO und Alt-Texte stehen in `products.json` (Alt-Texte waren leer). Bei farbigen Lenkrädern und Schlüsselcovern trugen Titel und SEO-Titel vor dem Rollout zusätzlich den Farbzusatz „ – Farbe“. Dieser wurde nach der Sicherung von 8:00 Uhr außerhalb dieser Sitzung ergänzt.
+- **Weiterleitungen:** Bestehende Weiterleitungen, deren Ziel ein alter Handle war, zeigen jetzt direkt auf den neuen Handle (keine Ketten).
