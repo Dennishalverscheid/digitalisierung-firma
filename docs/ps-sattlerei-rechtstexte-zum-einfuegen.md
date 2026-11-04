@@ -52,7 +52,7 @@ Telefon: 02389 / 9953050
 E-Mail: sales@ps-sattlerei.com
 ```
 
-## 3. Versandrichtlinie (neu – Feld war leer, Seite lieferte Fehler 404)
+## 3. Versandrichtlinie – ✅ ERLEDIGT (als Seite „Versand & Zahlung“ angelegt, /policies/shipping-policy leitet dorthin weiter; Einfügen nicht mehr nötig)
 
 Grundlage: eure aktuellen Versandeinstellungen in Shopify (ausgelesen am 04.11.2026).
 
