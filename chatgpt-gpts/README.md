@@ -1,13 +1,13 @@
 # KI-Agenten für ChatGPT (Custom GPTs)
 
-54 deutsche, gekürzte und auf deutsches Recht angepasste Fassungen ausgewählter Agenten aus
-[msitarzewski/agency-agents](https://github.com/msitarzewski/agency-agents) (MIT-Lizenz) plus der selbst entwickelte **E-Mail-Manager**.
+55 deutsche, gekürzte und auf deutsches Recht angepasste Fassungen ausgewählter Agenten aus
+[msitarzewski/agency-agents](https://github.com/msitarzewski/agency-agents) (MIT-Lizenz) plus die selbst entwickelten **E-Mail-Manager** und **Social-Media-Content-Creator**.
 Mehrere ähnliche Original-Agenten wurden teilweise zu einem GPT zusammengefasst (steht jeweils im Titel).
 
 | Ordner | Inhalt |
 |---|---|
 | `01-vertrieb` | Akquise, Angebote, Lead-Magnete, Vertriebscoaching, Bestandskunden |
-| `02-content-marketing` | Content, LinkedIn, SEO, E-Mail-Marketing, Social Media, Video, PR, Ads, Tracking, KI-Sichtbarkeit u. v. m. |
+| `02-content-marketing` | Social-Media-Content-Creator (Instagram/TikTok/YouTube), Content, LinkedIn, SEO, E-Mail-Marketing, Social Media, Video, PR, Ads, Tracking, KI-Sichtbarkeit u. v. m. |
 | `03-teamfuehrung` | Chief of Staff, Change-Management, Organisationspsychologe, Schulungen, Recruiting/Onboarding, Projektmanagement |
 | `04-office` | E-Mail-Manager, Protokolle, Management-Zusammenfassung, Dokumente, Kundenservice, Vertragsprüfung, Berichte |
 | `05-finanzen` | Buchhaltung & Controlling, Finanzplanung & Preiskalkulation |
