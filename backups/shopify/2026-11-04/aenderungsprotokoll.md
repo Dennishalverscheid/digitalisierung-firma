@@ -154,3 +154,18 @@ Hersteller vorher uneinheitlich, Produkttyp vorher überall leer.
 
 - [ ] Zeitzone: Einstellungen → Allgemein → Zeitzone auf (GMT+01:00) Berlin
 - [ ] Gewichte der Varianten (fast alle 0 g) – bitte reale Versandgewichte je Produktgruppe nennen, dann trage ich sie ein
+
+# Paket B – Testlauf (2 Produkte)
+
+| Feld | Alt | Neu |
+|---|---|---|
+| **Produkt 7536806297696** Titel | PSS Leder Schlüsselcover passend für BMW | PSS Leder Schlüsselcover passend für BMW – Türkis |
+| URL | /products/schlusselcover-fur-bmw-autoschlussel-copy-copy-4 | /products/pss-leder-schluesselcover-bmw-tuerkis (alte URL → 301-Weiterleitung, geprüft) |
+| SEO-Titel | Nappaleder Schlüsselcover passend für Ihren BMW Autoschlüssel | Leder Schlüsselcover für BMW in Türkis \| PS-Sattlerei |
+| SEO-Beschreibung | Nappaleder Schlüsselcover für Ihren BMW Autoschlüssel - in Wunschfarbe - Handgefertigt. Schützen Sie Ihren Schlüssel stilvoll & sicher - jetzt online bestellen | Nappaleder Schlüsselcover für Ihren BMW Autoschlüssel in Türkis oder Wunschfarbe – handgefertigt von PS-Sattlerei. Schützen Sie Ihren Schlüssel stilvoll & sicher. |
+| Alt-Texte (2 Bilder) | leer | „PSS Leder Schlüsselcover für BMW Autoschlüssel in Türkis – Bild 1/2“ |
+| **Produkt 7543398236256** Titel | PSS EVO-X Forged Carbon Lenkrad - Iconic Edition passend für Audi RS3 8V / RS4 / RS5 | PSS EVO-X Forged Carbon Lenkrad Iconic Edition passend für Audi RS3 8V / RS4 / RS5 – Rot |
+| URL | /products/pss-evo-x-forged-carbon-lenkrad-iconic-edition-passend-fur-audi-rs3-8v-rs4-rs5-copy-copy | /products/pss-evo-x-forged-carbon-lenkrad-audi-rs3-8v-rs4-rs5-rot (alte URL → 301-Weiterleitung, geprüft) |
+| SEO-Titel | leer | Forged Carbon Lenkrad für Audi RS3 8V, RS4, RS5 – Rot \| PS-Sattlerei |
+| SEO-Beschreibung | Carbon Lenkrad Highlights: markanter Motorsport-Look, 12-Uhr-Markierung Kyalami Green, C-Leisten um die Spange lasiert in Kyalami Green - jetzt online bestellen | PSS EVO-X Forged Carbon Lenkrad Iconic Edition in Rot für Audi RS3 8V, RS4 & RS5 – von PS-Sattlerei, auf Wunsch mit Montage in Bergkamen. |
+| Alt-Texte (2 Bilder) | leer | „PSS EVO-X Forged Carbon Lenkrad für Audi RS3 8V, RS4, RS5 in Rot – Bild 1/2“ |
