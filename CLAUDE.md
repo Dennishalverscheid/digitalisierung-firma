@@ -25,6 +25,12 @@ Aufruf z. B.: „Nutze den Sales Outreach Agenten und schreib eine LinkedIn-Nach
 ## ChatGPT
 Deutsche Fassungen für Custom GPTs liegen in `chatgpt-gpts/` (Anleitung in `chatgpt-gpts/README.md`).
 
+## ChatGPT als zweite Meinung (`chatgpt_fragen`)
+Über den MCP-Server `chatgpt` (`tools/chatgpt-mcp/server.mjs`, eingetragen in `.mcp.json`) kann Claude ChatGPT befragen – zum Gegenlesen, für alternative Formulierungen oder eine zweite Einschätzung.
+- Voraussetzung: Umgebungsvariable `OPENAI_API_KEY` (nie ins Repository schreiben); optional `OPENAI_MODEL`.
+- Nur nutzen, wenn der Nutzer es wünscht oder eine zweite Meinung echten Mehrwert bringt; Antworten von ChatGPT kritisch prüfen und als solche kennzeichnen.
+- **Keine vertraulichen Daten** (Kunden-, Mitarbeiter-, Finanz- oder Vertragsdaten, personenbezogene Daten) an ChatGPT senden, solange kein Auftragsverarbeitungsvertrag mit OpenAI besteht. Im Zweifel anonymisieren.
+
 ## Agenten aktualisieren
 ```bash
 git clone --depth 1 https://github.com/msitarzewski/agency-agents /tmp/aa
