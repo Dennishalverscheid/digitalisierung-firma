@@ -22,8 +22,10 @@ Autosattlerei/Manufaktur in Bergkamen: Carbon-/Leder-/Alcantara-Lenkräder (Vere
 - **Theme-Kopie „Rechtssicher – Entwurf 04.11.2026“** (ID 188199272544): Preishinweis „inkl. MwSt., zzgl. Versandkosten“, „2.000+ Kunden“-Block mit fremden Fotos entfernt, Block Produktsicherheit/Herstellerangaben (GPSR) + Zulassungshinweis Lenkräder (Snippet `pss-produktsicherheit`), FAQ korrigiert, Zahlungs-Icons automatisch, Widerrufsformular-Vorlage
 - Rechtstexte (Impressum, Kontakt, AGB, Widerruf mit Sonderanfertigungs-Regel, Datenschutz) erstellt → laut Inhaber **eingetragen** (`docs/ps-sattlerei-rechtstexte-einfuegen.html`)
 
+- **SEO-Runde (04.11. nachmittags):** SEO-Titel und -Beschreibungen für alle 15 Kollektionen. Fließtexte für 5 Kollektionen. **Paket B Rollout** für 63 aktive Produkte: Titel, URLs ohne „-copy“ mit 301-Weiterleitung, SEO-Texte, 158 Alt-Texte. Alte Weiterleitungen ohne Ketten. Theme-Kopie „SEO-Korrekturen – Entwurf 04.11.2026“ (ID 188204875872) mit LocalBusiness-Daten. Die Theme-Kopie „Rechtssicher“ ist live.
+
 ## Offen / zu prüfen ⏳
-1. **Prüfen:** Ist die Theme-Kopie veröffentlicht? (Themes-Liste: role MAIN) → sonst Inhaber erinnern
+1. Theme-Kopie „SEO-Korrekturen“: Inhaber ändert h1→h2 in `sections/featured-product.liquid` (Z. 256/258), entfernt den Fettdruck in der FAQ-Frage „Kann ich mein Fahrzeug individuell anpassen lassen?“ und veröffentlicht. Startseiten-Titel und -Beschreibung in den Präferenzen setzen. Kundenstimmen auf der Startseite: Quelle angeben (§ 5b Abs. 3 UWG). 2 Mercedes-Schlüsselcover „Schwarz“ doppelt. 2 Produkte „Carbon Interieur Set RS6 C8“ doppelt – Inhaber fragen
 2. **Widerrufsbutton-App** installieren (Empfehlung: „Widerrufsbutton § 356a BGB – mit Eingangsbestätigung“), in App-Einbettungen aktivieren, mit Seite „Vertrag widerrufen“ verknüpfen, Datenschutz ergänzen. Bis dahin Eingangsbestätigungen **manuell am selben Tag** (Vorlage `docs/ps-sattlerei-widerrufsbutton.md`)
 3. Datenschutz: Shopify-Automatik auf manuell umgestellt? YouTube-Video (Design Editionen) und Google Maps (Kontaktseite) erst nach Einwilligung laden – **noch nicht geprüft/umgesetzt**; Newsletter Double-Opt-In prüfen
 4. Rechtstexte anwaltlich prüfen lassen (Liste in `docs/ps-sattlerei-rechtstexte-zum-einfuegen.md`, Teil 4)
