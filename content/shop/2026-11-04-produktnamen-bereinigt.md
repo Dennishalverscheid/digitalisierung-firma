@@ -54,3 +54,7 @@
 - „EVO-X Daytona Edition RS6/RS7“: Bestand −1 (Variante Wunschfarbe).
 - Nur 6 von 230 Produktbildern haben Alt-Texte (SEO/Barrierefreiheit).
 - 35 von 79 Produkten ohne eigenen SEO-Titel.
+
+## Nachtrag 04.11.2026
+- „ab“-Preise in Meta-Beschreibungen korrigiert: Nogaro RS6 (7536826646624) 19.990 → 24.990 €, VW T6.1 (7536826843232) 9.990 → 12.990 €, Iconic RS6 (7548027666528) 39.990 → 39.900 €. SEO-Titel Nogaro: „PSS Iconic Edition für Audi RS6 C8 nur 3 Tage Standzeit“ → „PSS Nogaro Heritage Edition für Audi RS6 C8 nur 3 Tage Standzeit“.
+- Panne: Das Setzen des SEO-Titels hat bei 31 Produkten die Meta-Beschreibung geleert (Shopify ersetzt das SEO-Feld komplett). Alle 31 aus dem Export vom Vormittag wiederhergestellt und live geprüft.
