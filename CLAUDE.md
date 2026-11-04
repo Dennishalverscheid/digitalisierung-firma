@@ -31,6 +31,12 @@ Deutsche Fassungen für Custom GPTs liegen in `chatgpt-gpts/` (Anleitung in `cha
 - Nur nutzen, wenn der Nutzer es wünscht oder eine zweite Meinung echten Mehrwert bringt; Antworten von ChatGPT kritisch prüfen und als solche kennzeichnen.
 - **Keine vertraulichen Daten** (Kunden-, Mitarbeiter-, Finanz- oder Vertragsdaten, personenbezogene Daten) an ChatGPT senden, solange kein Auftragsverarbeitungsvertrag mit OpenAI besteht. Im Zweifel anonymisieren.
 
+## ChatGPT über Codex (ChatGPT-Business-Login, ohne Token-Abrechnung)
+MCP-Server `codex` in `.mcp.json` (`codex mcp-server`). Nutzung läuft über das Kontingent des ChatGPT-Business-Abos.
+- Anmeldung pro neuer Cloud-Sitzung: `npx -y @openai/codex@0.166.0 login --device-auth` ausführen, dem Nutzer Link und Code nennen, er bestätigt auf chatgpt.com. Niemals Passwörter oder Tokens im Chat erfragen.
+- Netzwerk: `auth.openai.com`, `chatgpt.com`, `api.openai.com` müssen in der Umgebung freigegeben sein.
+- Codex nur lesend/beratend einsetzen (Sandbox `read-only`), Antworten als „Einschätzung von ChatGPT/Codex“ kennzeichnen; Datenschutzregeln wie oben.
+
 ## Agenten aktualisieren
 ```bash
 git clone --depth 1 https://github.com/msitarzewski/agency-agents /tmp/aa
