@@ -169,3 +169,13 @@ Hersteller vorher uneinheitlich, Produkttyp vorher überall leer.
 | SEO-Titel | leer | Forged Carbon Lenkrad für Audi RS3 8V, RS4, RS5 – Rot \| PS-Sattlerei |
 | SEO-Beschreibung | Carbon Lenkrad Highlights: markanter Motorsport-Look, 12-Uhr-Markierung Kyalami Green, C-Leisten um die Spange lasiert in Kyalami Green - jetzt online bestellen | PSS EVO-X Forged Carbon Lenkrad Iconic Edition in Rot für Audi RS3 8V, RS4 & RS5 – von PS-Sattlerei, auf Wunsch mit Montage in Bergkamen. |
 | Alt-Texte (2 Bilder) | leer | „PSS EVO-X Forged Carbon Lenkrad für Audi RS3 8V, RS4, RS5 in Rot – Bild 1/2“ |
+
+# Rechtssicherheit – Runde 1
+
+| Bereich | Änderung | Rückgängig |
+|---|---|---|
+| Seite „PS-Sattlerei Gewinnspiel Essen Motorshow 2025“ (gid://shopify/Page/103684571232) | veröffentlicht → **ausgeblendet** (Ziehung 09.12.2025 abgelaufen, keine Teilnahmebedingungen) | Seite wieder auf „sichtbar“ |
+| Weiterleitungen (8 Stück) | Ziele auf gelöschte/Entwurfs-/falsche Produkte → passende Kollektion: 322300313696, 342188130400, 342640328800 → /collections/audi-lenkrader · 342189211744, 342439329888, 342440444000, 342634102880 → /collections/mercedes-lenkrader · 354916171872 → /collections/audi-interieur-design-pakete | alte Ziele siehe `collections_redirects_themes.json` |
+| Theme | Neue **unveröffentlichte** Kopie „Rechtssicher – Entwurf 04.11.2026“ (gid://shopify/OnlineStoreTheme/188199272544) des Live-Themes „Go Live Theme - Concept“ | Kopie löschen; Live-Theme unverändert |
+| Theme-Kopie: templates/product.json + product.design-edition.json | Block „Bereits über 2.000+ Kunden“ mit fremden Stockfotos (Leon.png/Kim.png aus anderem Shop) **entfernt** · Hinweis „inkl. MwSt., zzgl. Versandkosten“ (Link Versandseite) unter Titel/Preis · Zahlungs-Icons jetzt automatisch aus aktiven Zahlungsarten statt fest eingebauter SVGs · FAQ Lieferzeit/Versand an tatsächliche Versandeinstellungen angepasst, toter Link „Pflege-Seite“ ersetzt · Design Edition: Tippfehler „Monatgefertig“, Lieferzeit 3–5 → 3–6 Wochen (wie Versandprofil), „weltweit per Spedition“ → „innerhalb Deutschlands, Ausland auf Anfrage“ (Versandprofil Interieur nur DE) | Dateien `theme/*.vorher`; Prüfsummen der hochgeladenen Fassung = `theme/*.nachher` (MD5 e2e6fe30…, c671e1f7…) |
+| Rechtstexte (Impressum, Kontakt, Versand) | **nicht geändert** – Connector ohne Berechtigung `write_legal_policies`. Texte zum Einfügen: `docs/ps-sattlerei-rechtstexte-zum-einfuegen.md` | – |
