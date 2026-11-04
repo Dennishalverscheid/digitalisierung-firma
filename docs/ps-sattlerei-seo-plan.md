@@ -458,3 +458,22 @@ Aufwand: **S** = unter 2 Std., **M** = 2–8 Std., **L** = mehr als 1 Tag (Schä
 - [ ] Finanzierungsmöglichkeiten für Pakete
 - [ ] Zugang zu GSC und zum Google-Unternehmensprofil
 - [ ] Entscheidung Variante A/B für Farbdubletten; Farbton der doppelten „Schwarz“-Schlüsselcover
+
+---
+
+## 7. Live-Prüfung 04.11.2026 (per curl, nach Runde SEO-1)
+
+| Prüfpunkt | Befund (Beleg) | Maßnahme |
+|---|---|---|
+| Startseite `<title>` | „Online Shop der PS Sattlerei - Hochwertige Auto Individualisierungen – PS-Sattlerei“ (83 Zeichen, Marke doppelt) | Inhaber: Onlineshop → Einstellungen (Präferenzen) → Titel „PS-Sattlerei – Lenkrad- & Interieur-Manufaktur Bergkamen“ |
+| Startseite Meta-Beschreibung | „…Autosattlerei in der Nähe von Dortmund, die genau nach deinen Vorstellungen…“ (Du-Form, abgeschnitten) | Ersetzen durch: „Veredelte Lenkräder aus Carbon, Leder & Alcantara sowie Interieur-Pakete für Audi, BMW, Mercedes & VW – Manufaktur in Bergkamen (NRW).“ |
+| Startseite H1 | 2 × H1: „PS-Sattlerei“ und „PSS Carbon Interieur Set passend für Audi RS6 C8“ (Abschnitt „Hervorgehobenes Produkt“) | Theme: Produkttitel im Featured-Product-Abschnitt als `h2` ausgeben (an unveröffentlichter Kopie) |
+| Startseite JSON-LD | nur `ProductGroup` (aus Featured Product), **kein Organization/LocalBusiness** | LocalBusiness-JSON-LD (Abschnitt 5) ins Theme |
+| Startseite Bilder | 34 `<img>`, davon 19 ohne/mit leerem Alt-Text | Alt-Texte für Slider/Bildabschnitte im Theme-Editor |
+| Kollektionen | Neue SEO-Titel/-Beschreibungen live, Canonical korrekt (`/collections/…`), 1 × H1, JSON-LD `CollectionPage` | ✅ – H1-Titel ggf. später umbenennen (Abschnitt 4) |
+| Produktseiten (Testprodukte) | Titel/Beschreibung neu und live, Canonical ohne Kollektionspfad ✅, 1 × H1 ✅, JSON-LD `ProductGroup` mit `brand: PS-Sattlerei` ✅ + `FAQPage` | FAQ-Fragen enthalten `<strong>`-HTML im Fragetext → im FAQ-Block Formatierung entfernen |
+| Sitemap Produkte | 68 Produkt-URLs, davon **48 mit „-copy“** im Handle | Paket-B-Rollout: neue Handles + 301 |
+| Sitemap Seiten | nur `/pages/contact` gelistet | Prüfen, ob „Versand & Zahlung“ / „Vertrag widerrufen“ sichtbar sind (Sitemap aktualisiert sich ggf. verzögert) |
+| Blog | `/blogs/news` vorhanden, Ratgeber (Abschnitt 5.3) kann dort starten | – |
+| robots.txt | Shopify-Standard, Sitemap verlinkt | ✅ |
+| Alcantara | Produkttext RS3-Lenkrad: „Alcantara in den Grip-Zonen“, „Handgefertigt in Deutschland“ | Platzhalter „Alcantara“ in 4.1 damit teilweise belegt – Inhaber bestätigen |

@@ -183,3 +183,13 @@ Hersteller vorher uneinheitlich, Produkttyp vorher überall leer.
 | Theme-Kopie: neuer Baustein `snippets/pss-produktsicherheit.liquid` + Block „pss_safety“ unter dem Warenkorb-Button (beide Produktvorlagen) | Aufklappbarer Block „Produktsicherheit & Herstellerangaben“: Hersteller PS-Sattlerei GmbH mit Anschrift/E-Mail/Telefon (GPSR), Sicherheitshinweis Einbau/Airbag inkl. Montage durch Personal mit Airbag-Sachkunde; bei Lenkrädern bzw. Produkten mit „Lenkrad“ in der Beschreibung zusätzlich Zulassungshinweis (Veredelung, Metallkern original, keine ABE/kein Teilegutachten, Klärung mit TÜV/DEKRA/GTÜ). Vorschau geprüft: Lenkrad ✔ mit Zulassungshinweis, Schlüsselcover ✔ ohne, Design Edition RS6 ✔ mit; keine Liquid-Fehler. Prüfsummen = `theme/*.nachher` | Block aus Vorlage entfernen bzw. Datei löschen |
 | Neue Seite „Versand & Zahlung“ (/pages/versand-und-zahlung, gid://shopify/Page/163644047456) + Weiterleitung /policies/shipping-policy → diese Seite (gid://shopify/UrlRedirect/615431340128) | Ersatz für fehlende Versandrichtlinie (Connector ohne Schreibrecht für Richtlinien). Inhalt = tatsächliche Versandeinstellungen. Link „Versandkosten“ im Preishinweis funktioniert damit (geprüft: 301 → 200) | Seite + Weiterleitung löschen |
 | Widerrufsbutton | Theme-Kopie: neue Vorlage `templates/page.widerruf.liquid` (MD5 833f7c29…; zweistufig, Kontaktformular) · neue Seite „Vertrag widerrufen“ (gid://shopify/Page/163644375136, /pages/vertrag-widerrufen) · Footer-Menü: + „Versand & Zahlung“, + „Vertrag widerrufen“ · Kundenkonto-Menü: + „Vertrag widerrufen“. Getestet: Seite live erreichbar, Ablauf in Vorschau (iPhone-Emulation) funktioniert, kein Formular abgeschickt | Menüpunkte entfernen, Seite löschen, Vorlage löschen |
+
+## Runde SEO-1 (04.11.2026): SEO-Titel/-Beschreibungen Kollektionen + Korrektur Testlauf
+
+**Vorher-Zustand:**
+- Alle 15 Kollektionen: `seo.title` = null, `seo.description` = null. Ausnahme „Alle Lenkräder“ (275328368736): `seo.title` = „Lenkräder“.
+- Kollektion „Zubehör“ (279048814688, Handle `leder-schlussel-cover`): `descriptionHtml` = `<p>Beschreibung</p>` (Platzhalter).
+- Produkt 7543398236256: SEO-Titel „Forged Carbon Lenkrad für Audi RS3 8V, RS4, RS5 – Rot | PS-Sattlerei“ (68 Zeichen).
+- Produkt 7536806297696: SEO-Beschreibung „Nappaleder Schlüsselcover für Ihren BMW Autoschlüssel in Türkis oder Wunschfarbe – handgefertigt von PS-Sattlerei. Schützen Sie Ihren Schlüssel stilvoll & sicher.“ (162 Zeichen).
+
+**Nachher:** Die neuen Werte stehen in `docs/ps-sattlerei-seo-plan.md`, Abschnitt 4 bzw. 8. Zurücksetzen: die alten Werte per `collectionUpdate`/`productUpdate` wieder eintragen.
