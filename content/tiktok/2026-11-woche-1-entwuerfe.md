@@ -1,6 +1,6 @@
 # TikTok @pssattlerei – Woche 1 (06.–12.11.2026) – ENTWÜRFE zur Freigabe
 
-Status: **wartet auf Freigabe** – nichts ist eingeplant.
+Status: **als Entwurf in Metricool angelegt (04.11.)** – wartet auf Freigabe, nichts veröffentlicht.
 Format: TikTok-Fotobeiträge (Bilderserie) mit Bildern aus dem Shop. Uhrzeiten laut Metricool-Auswertung „beste Zeit“ (Europe/Berlin).
 Einstellungen für alle: öffentlich, Kommentare an, Kennzeichnung „eigene Marke“ (kommerzieller Inhalt) an, Musik automatisch hinzufügen.
 Keine Preise in den Texten (sonst Gesamtpreis inkl. MwSt. nach PAngV nötig) – Preise stehen im Shop.
@@ -19,7 +19,7 @@ Text:
 > Schwarz, Rot, Grün oder Grau – welches nimmst du? 👇
 > PSS EVO-X Forged Carbon Lenkrad, passend für RS3 8V, RS4 und RS5. Handgefertigt in Deutschland, Alcantara in den Grip-Zonen, 12-Uhr-Markierung einlackiert.
 > Schreib deine Nummer 1–4 in die Kommentare.
-> 🔗 Shop im Profil
+> 🔗 ps-sattlerei.shop
 > #pssattlerei #carbonlenkrad #forgedcarbon #rs3 #rs4 #rs5 #lenkrad #interieur
 
 ---
@@ -32,7 +32,7 @@ Text:
 > Dein Alcantara-Lenkrad glänzt und fühlt sich speckig an? Das muss nicht so bleiben.
 > Fett und Schmutz setzen sich in die Fasern. Unser PSS Alcantara Reinigungsset löst sie schonend heraus – die feine PSS-Bürste richtet die Fasern wieder auf. Für Lenkrad, Sitze, Türverkleidungen und Schaltmanschette.
 > Wie pflegst du dein Alcantara bisher? 👇
-> 🔗 Shop im Profil
+> 🔗 ps-sattlerei.shop
 > #alcantara #autopflege #lenkrad #interieur #detailing #pssattlerei
 
 ---
@@ -72,6 +72,6 @@ Text:
 ---
 
 ## Offene Punkte vor dem Einplanen
-- [BITTE PRÜFEN] Steht der Shop-Link (ps-sattlerei.shop) im TikTok-Profil? Sonst „Shop im Profil“ streichen.
+- [BITTE PRÜFEN] Steht der Shop-Link (ps-sattlerei.shop) im TikTok-Profil? Sonst „ps-sattlerei.shop“ streichen.
 - [BITTE PRÜFEN] Impressum-Link im Profil (§ 5 DDG).
 - Ab Woche 2: kurze Handy-Videos aus der Werkstatt (siehe Drehliste) – Videos laufen auf TikTok deutlich besser als Fotobeiträge.
