@@ -200,3 +200,12 @@ Betrifft 63 aktive Produkte (ohne die 2 Testprodukte, Entwürfe unverändert). J
 - **Alt- und Neuwerte je Produkt:** `paket-b-rollout.json` (Felder `old_title`, `old_handle` → `title`, `handle`, `seoT`, `seoD`, `alts`).
 - **Vorher-Zustand:** Handles, SEO und Alt-Texte stehen in `products.json` (Alt-Texte waren leer). Bei farbigen Lenkrädern und Schlüsselcovern trugen Titel und SEO-Titel vor dem Rollout zusätzlich den Farbzusatz „ – Farbe“. Dieser wurde nach der Sicherung von 8:00 Uhr außerhalb dieser Sitzung ergänzt.
 - **Weiterleitungen:** Bestehende Weiterleitungen, deren Ziel ein alter Handle war, zeigen jetzt direkt auf den neuen Handle (keine Ketten).
+
+## Kollektionstexte (04.11.2026)
+- Neue Beschreibungstexte (`descriptionHtml`) für die Kollektionen Alle Lenkräder, Audi Lenkräder, BMW Lenkräder, Mercedes Lenkräder und Alle Interieur Pakete. **Vorher: alle leer.** Fehlende Fakten wurden nicht als Platzhalter veröffentlicht, sondern neutral formuliert: Fertigungszeit „siehe Produktseite“, keine Liste der Mercedes-Baureihen.
+- Zurücksetzen: `descriptionHtml` wieder auf "" setzen.
+
+## Theme-Kopie „SEO-Korrekturen – Entwurf 04.11.2026“ (ID 188204875872, unveröffentlicht)
+- Kopie des Live-Themes „Rechtssicher – Entwurf 04.11.2026“ (188199272544).
+- `snippets/social-meta-tags.liquid`: strukturierte Unternehmensdaten (JSON-LD AutoPartsStore mit Adresse, Telefon, E-Mail, Logo) nur auf der Startseite angehängt. MD5 vorher 46c927c6… → nachher 530d4f83…. Dateien in `theme-seo/`. Vorschau geprüft: gültiges JSON.
+- Offen (manuell im Code-Editor der Kopie): `sections/featured-product.liquid`, Zeilen 256 und 258: `h1` → `h2`.
