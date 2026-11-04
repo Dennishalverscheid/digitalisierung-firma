@@ -1,0 +1,17 @@
+{%- comment -%} PS-Sattlerei: Herstellerangaben (GPSR), Sicherheits- und Zulassungshinweise. Text hier zentral pflegen. {%- endcomment -%}
+<details class="pss-safety">
+  <summary>Produktsicherheit &amp; Herstellerangaben</summary>
+  <div class="pss-safety__body">
+    <p><strong>Hersteller:</strong> PS-Sattlerei GmbH, Marie-Curie-Straße 12, 59192 Bergkamen, Deutschland · <a href="mailto:sales@ps-sattlerei.com">sales@ps-sattlerei.com</a> · 02389 / 9953050</p>
+    <p><strong>Sicherheitshinweise:</strong> Bitte prüfe vor dem Einbau Passform und Kompatibilität mit deinem Fahrzeug (z.&nbsp;B. anhand von FIN oder Teilenummer). Arbeiten an sicherheitsrelevanten Bauteilen – insbesondere im Bereich von Airbag-Systemen – dürfen nur durch fachkundiges Personal und unter Beachtung der Vorgaben des Fahrzeugherstellers erfolgen. Auf Wunsch übernehmen wir den Einbau in unserer Werkstatt in Bergkamen durch Personal mit Sachkunde für Airbag-Systeme.</p>
+    {%- if product.type == 'Lenkrad' or product.description contains 'Lenkrad' -%}
+    <p><strong>Hinweis zur Zulassung:</strong> Es handelt sich um die Veredelung eines Original-Lenkrads. Der originale Metallkern bleibt erhalten; Airbag, Tasten und Elektronik werden vom Original übernommen. Eine ABE oder ein Teilegutachten liegt nicht vor. Bitte kläre vor der Nutzung im öffentlichen Straßenverkehr mit einer Prüforganisation (z.&nbsp;B. TÜV, DEKRA, GTÜ), ob eine Begutachtung bzw. Eintragung erforderlich ist.</p>
+    {%- endif -%}
+  </div>
+</details>
+<style>
+  .pss-safety{border:1px solid rgba(0,0,0,.15);border-radius:6px;padding:10px 14px;margin-top:8px;font-size:14px;line-height:1.5}
+  .pss-safety summary{cursor:pointer;font-weight:600}
+  .pss-safety__body p{margin:8px 0 0}
+  .pss-safety a{text-decoration:underline}
+</style>
