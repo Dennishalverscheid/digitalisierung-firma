@@ -28,6 +28,24 @@
 
 ---
 
+## Shop-Kennzahlen (Shopify Analytics, Nov 2025 – 04.11.2026)
+
+| Kennzahl | Wert |
+|---|---|
+| Sitzungen / Besucher | 30.416 / 26.658 |
+| Sitzungen mit „In den Warenkorb“ | 127 (**0,4 %**) |
+| Checkout erreicht / abgeschlossen | 25 / 4 |
+| Bestellungen | 7, davon 3 im Nov 2025 mit 98 % Rabatt (vermutlich Testbestellungen, zu prüfen) |
+| Nettoumsatz Online-Shop | **2.452,69 €**, davon 2.190 € aus einem einzigen Lenkrad (Mai 2026) |
+| Conversion-Rate | **0,01 %** (üblich im E-Commerce: ca. 1–3 %) |
+| Trafficquellen (90 Tage) | direkt 61 %, Google 19 %, Facebook 7 %, eigene Website 7 %, Instagram 4 % |
+| Geräte (90 Tage) | Mobil 75 %, Desktop 24 % |
+| Shop-Zeitzone | **EST** statt Europe/Berlin, verfälscht Tages- und Zeitauswertungen |
+
+**Kernbefund:** Das Problem ist nicht der Traffic, sondern die Conversion. Besucher kommen, legen aber fast nichts in den Warenkorb. Mehr Werbung würde derzeit Geld verbrennen. Zuerst müssen Vertrauen, Produktseiten (mobil!) und der Anfrageweg für hochpreisige Produkte verbessert werden. Offen ist, wie viele Aufträge über Telefon, Instagram oder Werkstatt zustande kommen, nachdem Kunden den Shop gesehen haben. Diese Anfragen müssen künftig gemessen werden.
+
+---
+
 ## Mängelliste nach Priorität
 
 ### 🔴 Sofort (Recht & Umsatzverlust)
