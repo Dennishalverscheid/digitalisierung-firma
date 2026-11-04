@@ -7,7 +7,7 @@
 - Nichts an Kunden oder nach außen senden ohne ausdrückliche Freigabe.
 
 ## Agenten (`.claude/agents/`)
-88 Subagenten, davon 87 aus [msitarzewski/agency-agents](https://github.com/msitarzewski/agency-agents) (MIT, siehe `.claude/agents/LICENSE-agency-agents.txt`) und 1 eigener (**E-Mail-Manager**).
+96 Subagenten, davon 95 aus [msitarzewski/agency-agents](https://github.com/msitarzewski/agency-agents) (MIT, siehe `.claude/agents/LICENSE-agency-agents.txt`) und 1 eigener (**E-Mail-Manager**).
 
 | Bereich | Agenten |
 |---|---|
@@ -18,6 +18,7 @@
 | **Office** | **E-Mail-Manager**, Meeting Notes Specialist, Document Generator, Executive Summary Generator, Customer Service, Support Responder, Legal Document Review, Analytics Reporter, Report Distribution Agent, Sales Data Extraction Agent, Data Consolidation Agent, Email Intelligence Engineer |
 | **Finanzen** | Bookkeeper & Controller, Finance Tracker, FP&A Analyst, Financial Analyst, Tax Strategist, Accounts Payable Agent |
 | **Digitalisierung & Prozesse** | Automation Governance Architect (n8n), Workflow Architect, Workflow Optimizer, Operations Manager, Business Strategist, Supply Chain Strategist, Agents Orchestrator, MCP Builder |
+| **Website & Design** | UI Designer, UX Architect, UI Finish-Gate Reviewer, Frontend Developer, Code Reviewer, Accessibility Auditor, Performance Benchmarker, Evidence Collector |
 | **Recht & Datenschutz** | Data Privacy Officer, Legal Compliance Checker, Compliance Auditor |
 
 Aufruf z. B.: „Nutze den Sales Outreach Agenten und schreib eine LinkedIn-Nachricht an …“ oder „Lass den E-Mail-Manager meinen Posteingang durchgehen.“
