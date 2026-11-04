@@ -17,6 +17,20 @@
         "@openai/codex@0.166.0",
         "mcp-server"
       ]
+    },
+    "postfach": {
+      "command": "node",
+      "args": [
+        "tools/postfach-mcp/server.mjs"
+      ],
+      "env": {
+        "EMAIL_IMAP_HOST": "${EMAIL_IMAP_HOST:-}",
+        "EMAIL_IMAP_PORT": "${EMAIL_IMAP_PORT:-993}",
+        "EMAIL_USER": "${EMAIL_USER:-}",
+        "EMAIL_PASSWORD": "${EMAIL_PASSWORD:-}",
+        "EMAIL_FROM": "${EMAIL_FROM:-}",
+        "EMAIL_DRAFTS_FOLDER": "${EMAIL_DRAFTS_FOLDER:-}"
+      }
     }
   }
 }

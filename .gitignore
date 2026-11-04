@@ -1,0 +1,3 @@
+# Lokale Mail-Entwürfe enthalten personenbezogene Daten – nie ins Repository
+postfach/entwuerfe/*
+!postfach/entwuerfe/README.md

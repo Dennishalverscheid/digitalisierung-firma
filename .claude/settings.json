@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__postfach__postfach_ordner",
+      "mcp__postfach__mails_auflisten",
+      "mcp__postfach__mail_lesen",
+      "mcp__postfach__entwurf_anlegen"
+    ]
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash|mcp__.*",
+        "hooks": [
+          { "type": "command", "command": "node \"$CLAUDE_PROJECT_DIR/.claude/hooks/sende-sperre.mjs\"" }
+        ]
+      }
+    ]
+  }
+}

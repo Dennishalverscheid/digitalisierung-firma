@@ -22,6 +22,12 @@
 
 Aufruf z. B.: „Nutze den Sales Outreach Agenten und schreib eine LinkedIn-Nachricht an …“ oder „Lass den E-Mail-Manager meinen Posteingang durchgehen.“
 
+## Postfach & E-Mail-Manager (`postfach/`)
+- Der E-Mail-Manager **liest** das Postfach und legt **Entwürfe** im Ordner „Entwürfe“ ab – **gesendet wird nur vom Nutzer selbst**. Das gilt auch für Claude in der Hauptsitzung: keine Mail senden, beantworten oder weiterleiten.
+- Technik: MCP-Server `postfach` (`tools/postfach-mcp/server.mjs`, IMAP, ohne Sendefunktion); Zugangsdaten nur als Umgebungsvariablen (`EMAIL_IMAP_HOST`, `EMAIL_USER`, `EMAIL_PASSWORD` …), Einrichtung in `postfach/README.md`.
+- Die Sende-Sperre `.claude/hooks/sende-sperre.mjs` (eingetragen in `.claude/settings.json`) blockiert Sende-Werkzeuge und Mailversand per Shell. Nicht umgehen oder abschalten ohne ausdrückliche Anweisung des Nutzers.
+- Ton, Signatur, Zuständigkeiten und Textbausteine: `postfach/firmenton.md`, `postfach/zustaendigkeiten.md`, `postfach/vorlagen/`.
+
 ## ChatGPT
 Deutsche Fassungen für Custom GPTs liegen in `chatgpt-gpts/` (Anleitung in `chatgpt-gpts/README.md`).
 
