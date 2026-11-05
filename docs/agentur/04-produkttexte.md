@@ -1009,8 +1009,7 @@ Status: **Entwurf, nicht im Shop umgesetzt.** Die Umsetzung erfolgt durch die Pr
 **Produkt-ID:** 7548027666528
 
 ```html
-<p>Die PSS Iconic Manufaktur Edition ist ein Komplett-Interieur für den Audi RS6 C8: Alcantara mit Ziernaht in {FARBE}, mattes Carbon, über 110 schwarz-matt lasierte Aluminiumteile, ein EVO-X Lenkrad, digitale Lenkradtasten, LED-Carbon-Schaltwippen und ein Race Display. Alle Bauteile werden vorab gefertigt und in Bergkamen im Austauschverfahren eingebaut; das Fahrzeug steht dafür ca. 3 Werktage bei uns.</p>
-<p>[Hinweis für die Umsetzung: {FARBE} = Nahtfarbe „Stahlblau“ bzw. Wunschfarbe – nur ein Produkt, Platzhalter bei Umsetzung durch „stahlblauer“ ersetzen.]</p>
+<p>Die PSS Iconic Manufaktur Edition ist ein Komplett-Interieur für den Audi RS6 C8: Alcantara mit stahlblauer Ziernaht (oder Naht in Wunschfarbe), mattes Carbon, über 110 schwarz-matt lasierte Aluminiumteile, ein EVO-X Lenkrad, digitale Lenkradtasten, LED-Carbon-Schaltwippen und ein Race Display. Alle Bauteile werden vorab gefertigt und in Bergkamen im Austauschverfahren eingebaut; das Fahrzeug steht dafür ca. 3 Werktage bei uns.</p>
 
 <h2>Highlights</h2>
 <ul>
