@@ -12,12 +12,12 @@ Zielgruppe: Fahrer von Audi-C8-Modellen, RS-Szene. Einstiegsprodukt ins PSS-Univ
 ## Ablauf (2 Wochen)
 | # | Termin | Format | Inhalt / Hook | Material | Status |
 |---|---|---|---|---|---|
-| P1 | So 09.11. 10:00 | Foto | „Erkennst du, was hier leuchtet? 👀“ (Neugier, Auflösung in den Kommentaren) | Produktfoto | Entwurf in Metricool |
-| P2 | Di 11.11. 18:00 | KI-Video (V1) | „Schaltblitz wie im Motorsport – jetzt für den C8 🔴“ | Higgsfield V1 | wartet auf Video |
-| P3 | Do 13.11. 18:00 | **Echtes Video** | „Hörst du's? Siehst du's.“ Motor im Stand hochdrehen, LED-Leiste läuft durch | Handy-Clip Werkstatt | wartet auf Clip |
-| P4 | Sa 15.11. 10:00 | KI-Video (V2) | „Matt-Carbon. Handlaminiert. Bergkamen.“ Lichtreflex über Carbon | Higgsfield V2 | wartet auf Video |
-| P5 | Di 18.11. 18:00 | Echtes Video | „Einbau in [X] Minuten“: Vorher Serienwippe → Nachher PSS | Handy-Clip | wartet auf Clip |
-| P6 | Do 20.11. 18:00 | KI-Video (V3) oder Mix | „Wippe + Lenkrad = Digital Performance Wheel“, Upsell | Higgsfield V3 | wartet auf Video |
+| P1 | Mo 09.11. 10:00 | Foto | „Erkennst du, was hier leuchtet? 👀“ (Neugier, Auflösung in den Kommentaren) | Produktfoto | Entwurf in Metricool |
+| P2 | Mi 11.11. 18:00 | KI-Video (V1) | „Schaltblitz wie im Motorsport – jetzt für den C8 🔴“ | Higgsfield V1 | wartet auf Video |
+| P3 | Fr 13.11. 18:00 | **Echtes Video** | „Hörst du's? Siehst du's.“ Motor im Stand hochdrehen, LED-Leiste läuft durch | Handy-Clip Werkstatt | wartet auf Clip |
+| P4 | So 15.11. 10:00 | KI-Video (V2) | „Matt-Carbon. Handlaminiert. Bergkamen.“ Lichtreflex über Carbon | Higgsfield V2 | wartet auf Video |
+| P5 | Mi 18.11. 18:00 | Echtes Video | „Einbau in [X] Minuten“: Vorher Serienwippe → Nachher PSS | Handy-Clip | wartet auf Clip |
+| P6 | Fr 20.11. 18:00 | KI-Video (V3) oder Mix | „Wippe + Lenkrad = Digital Performance Wheel“, Upsell | Higgsfield V3 | wartet auf Video |
 
 Danach wird ausgewertet: Wiedergabedauer, Shares, Profilaufrufe, Shop-Besuche. Was läuft, wird als bezahlte Anzeige verlängert (Spark Ads, nur nach Freigabe des Budgets).
 

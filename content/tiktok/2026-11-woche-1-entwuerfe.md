@@ -7,7 +7,7 @@ Keine Preise in den Texten (sonst Gesamtpreis inkl. MwSt. nach PAngV nötig) –
 
 ---
 
-## 1 · Do 06.11. · 18:00 · „Welche Farbe nimmst du?“
+## 1 · Fr 06.11. · 18:00 · „Welche Farbe nimmst du?“
 Produkt: PSS EVO-X Forged Carbon Lenkrad Iconic Edition (Audi RS3 8V / RS4 / RS5)
 Bilder (4): schwarz · rot · grün · grau
 - https://cdn.shopify.com/s/files/1/0600/1662/3712/files/Audi_RS-schwarz_c3a8f9e2-8400-4527-abb5-ffac98bb43e8.jpg
@@ -24,7 +24,7 @@ Text:
 
 ---
 
-## 2 · Sa 08.11. · 10:00 · Alcantara-Pflege
+## 2 · So 08.11. · 10:00 · Alcantara-Pflege
 Produkt: PSS Alcantara Reinigungsset
 Bild (1): https://cdn.shopify.com/s/files/1/0600/1662/3712/files/alcantara_reiniger_7b3b2688-0584-4827-afd0-c1655780828d.jpg
 
@@ -37,7 +37,7 @@ Text:
 
 ---
 
-## 3 · Mo 10.11. · 18:00 · RS6 C8 – kompletter Innenraum in ca. 3 Werktagen
+## 3 · Di 10.11. · 18:00 · RS6 C8 – kompletter Innenraum in ca. 3 Werktagen
 Produkt: PSS Iconic Manufaktur Edition (Audi RS6 C8)
 Bilder (6):
 - https://cdn.shopify.com/s/files/1/0600/1662/3712/files/shoprs6.jpg
@@ -56,7 +56,7 @@ Text:
 
 ---
 
-## 4 · Mi 12.11. · 18:00 · Morgens bringen, abends abholen
+## 4 · Do 12.11. · 18:00 · Morgens bringen, abends abholen
 Produkt: PSS Digital Performance Wheel (Audi RS6/RS7/A6/A7 C8)
 Bilder (3):
 - https://cdn.shopify.com/s/files/1/0600/1662/3712/files/shopiconicrs.jpg
