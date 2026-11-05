@@ -209,3 +209,9 @@ Betrifft 63 aktive Produkte (ohne die 2 Testprodukte, Entwürfe unverändert). J
 - Kopie des Live-Themes „Rechtssicher – Entwurf 04.11.2026“ (188199272544).
 - `snippets/social-meta-tags.liquid`: strukturierte Unternehmensdaten (JSON-LD AutoPartsStore mit Adresse, Telefon, E-Mail, Logo) nur auf der Startseite angehängt. MD5 vorher 46c927c6… → nachher 530d4f83…. Dateien in `theme-seo/`. Vorschau geprüft: gültiges JSON.
 - Offen (manuell im Code-Editor der Kopie): `sections/featured-product.liquid`, Zeilen 256 und 258: `h1` → `h2`.
+
+## Runde Agentur-1 (05.11.2026)
+- **Live, SEO-Beschreibungen** der Produkte 7525513298016 (G-Klasse), 7536750887008 (M3), 7536826843232 (T6.1) und 7536826646624 (Nogaro): ohne Bauteilliste, weil Lenkrad und Mittelarmlehne laut Produkttext nicht sicher zum Umfang gehören. Vorher: „Interieur-Paket für … : Armaturenbrett, Türverkleidungen, Lenkrad & Mittelarmlehne – nur 3 Tage Standzeit in Bergkamen.“
+- **Theme-Kopie 188204875872:**
+  - `sections/overlay-group.json`: Newsletter-Pop-up deaktiviert (`"disabled": true`). Grund: auf dem Handy ohne sichtbares Schließen-Kreuz. Vorher-Datei liegt in `theme-seo/`.
+  - Neu: `templates/llms.txt.liquid` (KI-Zusammenfassung des Shops, ohne Preise). Wird erst mit Veröffentlichung der Kopie wirksam.
