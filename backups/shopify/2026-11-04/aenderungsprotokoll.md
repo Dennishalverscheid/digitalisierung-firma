@@ -215,3 +215,11 @@ Betrifft 63 aktive Produkte (ohne die 2 Testprodukte, Entwürfe unverändert). J
 - **Theme-Kopie 188204875872:**
   - `sections/overlay-group.json`: Newsletter-Pop-up deaktiviert (`"disabled": true`). Grund: auf dem Handy ohne sichtbares Schließen-Kreuz. Vorher-Datei liegt in `theme-seo/`.
   - Neu: `templates/llms.txt.liquid` (KI-Zusammenfassung des Shops, ohne Preise). Wird erst mit Veröffentlichung der Kopie wirksam.
+
+## Produkttexte neu (06.11.2026, Freigabe Inhaber)
+- `descriptionHtml` von 67 Produkten ersetzt durch `docs/agentur/04-produkttexte-final.json`. Die Texte sind in Sie-Form, ohne Preise, mit Lieferzeit 6–8 Wochen bei Lenkrädern und Paketen und ohne Copy-Paste-Farbfehler.
+- **Vorher-Zustand:** `products.json` (Feld `descriptionHtml`).
+- Titel geändert:
+  - Mercedes-Schlüsselcover jetzt mit „(Schlüsselform 223)“ bzw. „(Schlüsselform 464)“. Handle der 464-Variante: `pss-leder-schluesselcover-mercedes-464-schwarz` (+301).
+  - 7536844963936: „PSS Waben-Carbon Interieur Set passend für Audi RS6 C8“, Handle `pss-waben-carbon-interieur-set-audi-rs6-c8` (+301).
+  - 7547781709920: „(klassische Carbon-Struktur)“.
