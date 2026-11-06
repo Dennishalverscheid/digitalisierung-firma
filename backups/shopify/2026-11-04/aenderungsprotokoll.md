@@ -223,3 +223,14 @@ Betrifft 63 aktive Produkte (ohne die 2 Testprodukte, Entwürfe unverändert). J
   - Mercedes-Schlüsselcover jetzt mit „(Schlüsselform 223)“ bzw. „(Schlüsselform 464)“. Handle der 464-Variante: `pss-leder-schluesselcover-mercedes-464-schwarz` (+301).
   - 7536844963936: „PSS Waben-Carbon Interieur Set passend für Audi RS6 C8“, Handle `pss-waben-carbon-interieur-set-audi-rs6-c8` (+301).
   - 7547781709920: „(klassische Carbon-Struktur)“.
+
+## Theme-Kopie 188204875872 – Runde 2 (06.11.2026)
+- Hochgeladen:
+  - `templates/llms.txt.liquid`: 6–8 Wochen
+  - `sections/shop-the-look.liquid`: kleine Bilder mit `sizes: 80px`, Karten mit Lazy Loading
+  - `config/settings_data.json`: Facebook- und YouTube-Links mit https
+- Upload läuft per Agent: `templates/product.json` („Versandfertig in 6–8 Wochen“, FAQ ohne `<strong>`), `templates/product.design-edition.json` (6–8 Wochen), `templates/index.json` (Beratungs-Link, „Teilen“, Shop-the-Look-Text, Hinweis zu den Google-Bewertungen).
+- **Nicht hochladbar (121 KB):** `sections/featured-product.liquid` (h1→h2). Die fertige Datei liegt in `theme-seo/runde2/sections__featured-product.liquid`. Der Inhaber ändert 2 Zeilen im Code-Editor.
+- Originale aller Dateien: `theme-seo/runde2/*.vorher`.
+- Seiten neu: „Lenkrad neu beziehen“ (163686776928) und „Autosattlerei Bergkamen“ (163686842464), beide im Footer-Menü. Ratgeber-Entwürfe: Artikel 634925056096 und 634925088864.
+- Offen beim Inhaber: Name der Versandmethode „Versand per Spedition (3 - 6 Wochen Fertigungszeit …)“ auf 6–8 Wochen ändern.

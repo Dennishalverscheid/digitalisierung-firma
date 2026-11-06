@@ -1,0 +1,1347 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "slideshow": {
+      "type": "slideshow",
+      "blocks": {
+        "slide-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/rs6shop.jpg",
+            "heading": "YOU DREAM IT. WE BUILD IT.",
+            "heading_size": "title-lg tracking-heading",
+            "heading_tag": "h2",
+            "button_label": "Produkte entdecken",
+            "button_link": "shopify://collections",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": false
+          }
+        }
+      },
+      "block_order": [
+        "slide-1"
+      ],
+      "settings": {
+        "autoplay": false,
+        "autoplay_speed": 7,
+        "show_navigation": true,
+        "image_height": "750px",
+        "content_width": "small",
+        "image_height_mobile": "500px",
+        "accessibility_info": "Slideshow zu deiner Marke",
+        "color_text": "#ffffff",
+        "color_background": "#ffffff",
+        "gradient_background": "",
+        "color_button_text": "#171717",
+        "color_button_background": "#ffffff",
+        "color_button_gradient": "",
+        "color_overlay": "#000000",
+        "overlay_opacity": 20,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": true,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "vertical"
+      }
+    },
+    "logo_list_3Xb3n7": {
+      "type": "logo-list",
+      "blocks": {
+        "logo_GHHQ7H": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/FPV_Logo_2022_02_WEB_coloured_350px.png",
+            "height": 36,
+            "link": "https://www.vest-automotive.de/"
+          }
+        },
+        "logo_TxztDd": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/VANME-wort.png",
+            "height": 28,
+            "link": "https://vanme.de/"
+          }
+        },
+        "logo_fi6rbk": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/Gemini_Generated_Image_u80uo6u80uo6u80u.png",
+            "height": 60,
+            "link": "https://www.urban-automotive.co.uk/"
+          }
+        },
+        "logo_atUVXD": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/Absolute_Motors-logo.png",
+            "height": 32,
+            "link": "https://www.absolutemotors.eu/"
+          }
+        }
+      },
+      "block_order": [
+        "logo_GHHQ7H",
+        "logo_TxztDd",
+        "logo_fi6rbk",
+        "logo_atUVXD"
+      ],
+      "name": "t:sections.logo-list.name",
+      "settings": {
+        "layout": "default",
+        "grid_horizontal": 70,
+        "direction": "left",
+        "speed": 5,
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "rich-text-1": {
+      "type": "rich-text",
+      "blocks": {
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Wir sind die Sattlerei, die Serie in Charakter verwandelt – sportlich, präzise, persönlich. Mit echter Handarbeit, edlen Materialien und messerscharfen Nähten entsteht Interieur, das man bei jedem Griff spürt. </p><p>Carbon, Leder & Alcantara in Manufakturqualität – gebaut für Fahrer, die keine Serienlösung akzeptieren. PS-Sattlerei formt aus deiner Idee ein Unikat mit Präzision, Performance und Charakter.</p>",
+            "text_font": "body",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "text"
+      ],
+      "settings": {
+        "text_alignment": "left",
+        "text_alignment_mobile": "left",
+        "heading": "<em><strong>Dein Interieur. Dein Statement.</strong></em>",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_width": "small",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "About us",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "scribble",
+        "highlighted_scribble": "squiggle-underline",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 0,
+        "divider": false,
+        "narrow": false,
+        "rounded": false
+      }
+    },
+    "collection_list_jzjahX": {
+      "type": "collection-list",
+      "blocks": {
+        "collection_iEcMNq": {
+          "type": "collection",
+          "settings": {
+            "collection": "alle-interieur-pakete",
+            "image": "shopify://shop_images/image00011.jpg",
+            "title": "Interieur Pakete",
+            "description": "",
+            "overlay_content": false,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_kcPxfN": {
+          "type": "collection",
+          "settings": {
+            "collection": "lenkrader",
+            "image": "shopify://shop_images/Mercedes_FL_Carbon_Schwarz-rot.jpg",
+            "title": "",
+            "description": "",
+            "overlay_content": false,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_LAV9Yk": {
+          "type": "collection",
+          "settings": {
+            "collection": "schlusselcover",
+            "image": "shopify://shop_images/SchlusselCover_BMW_Hellblau_Nappa-Photoroom_a8805f48-ed44-4c14-abf3-8a6510bd5c2d.jpg",
+            "title": "Accessories",
+            "description": "",
+            "overlay_content": false,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_QgbDEt": {
+          "type": "collection",
+          "disabled": true,
+          "settings": {
+            "collection": "lenkrader",
+            "image": "shopify://shop_images/image_3_e4925f0a-dd24-48f8-961b-8255e5002219.jpg",
+            "title": "Fußmatten",
+            "description": "",
+            "overlay_content": false,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_6kdKzX": {
+          "type": "collection",
+          "disabled": true,
+          "settings": {
+            "collection": "lenkrader",
+            "image": "shopify://shop_images/1703768227_7_2.png",
+            "title": "Schalthebel & Schaltwippen",
+            "description": "",
+            "overlay_content": false,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_XfikPB": {
+          "type": "collection",
+          "settings": {
+            "collection": "leder-schlussel-cover",
+            "image": "shopify://shop_images/1703768227_3.png",
+            "title": "",
+            "description": "",
+            "overlay_content": false,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        }
+      },
+      "block_order": [
+        "collection_iEcMNq",
+        "collection_kcPxfN",
+        "collection_LAV9Yk",
+        "collection_QgbDEt",
+        "collection_6kdKzX",
+        "collection_XfikPB"
+      ],
+      "settings": {
+        "card_style": "card",
+        "image_type": "collection",
+        "image_ratio": "square",
+        "show_products_count": true,
+        "show_view_all": false,
+        "columns": 4,
+        "carousel_on_desktop": true,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "collection-list": {
+      "type": "collection-list",
+      "blocks": {
+        "collection-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "lenkrader",
+            "image": "shopify://shop_images/alle_produkte.png",
+            "title": "Alle Produkte",
+            "description": "Check out all our products",
+            "overlay_content": true,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection-5": {
+          "type": "collection",
+          "settings": {
+            "collection": "lenkrader",
+            "image": "shopify://shop_images/Armaturenbrett.png",
+            "title": "Armaturenbrett",
+            "description": "Collection description",
+            "overlay_content": false,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 40
+          }
+        },
+        "collection-4": {
+          "type": "collection",
+          "settings": {
+            "collection": "lenkrader",
+            "image": "shopify://shop_images/Lenkrad_1.png",
+            "title": "Lenkräder",
+            "description": "Collection description",
+            "overlay_content": false,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 40
+          }
+        },
+        "collection-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "lenkrader",
+            "image": "shopify://shop_images/Armaturenbrett_1.png",
+            "title": "Schalthebel & Schaltwippen",
+            "description": "Collection description",
+            "overlay_content": false,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 40
+          }
+        },
+        "collection-3": {
+          "type": "collection",
+          "settings": {
+            "collection": "leder-schlussel-cover",
+            "image": "shopify://shop_images/1703768227_2.png",
+            "title": "Accessories",
+            "description": "Collection description",
+            "overlay_content": false,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 40
+          }
+        },
+        "collection-6": {
+          "type": "collection",
+          "settings": {
+            "collection": "leder-schlussel-cover",
+            "image": "shopify://shop_images/1703768227_3.png",
+            "title": "Zubehör",
+            "description": "Collection description",
+            "overlay_content": false,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 40
+          }
+        }
+      },
+      "block_order": [
+        "collection-1",
+        "collection-5",
+        "collection-4",
+        "collection-2",
+        "collection-3",
+        "collection-6"
+      ],
+      "disabled": true,
+      "settings": {
+        "card_style": "card",
+        "image_type": "collection",
+        "image_ratio": "square",
+        "show_products_count": true,
+        "show_view_all": false,
+        "columns": 2,
+        "carousel_on_desktop": true,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 100,
+        "padding_bottom": 100,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "video-with-text-overlay": {
+      "type": "video-with-text-overlay",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "",
+            "heading_size": "title-md",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "",
+            "text_font": "body",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "button_label": "Produkte entdecken",
+            "button_link": "shopify://collections",
+            "button_style": "primary",
+            "button_size": "md",
+            "button_external": false,
+            "button_icon": true
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text",
+        "button"
+      ],
+      "settings": {
+        "transparent_header": false,
+        "video": "shopify://files/videos/AUDI RS6 HOMMAGE SFC V1.mov",
+        "video_url": "",
+        "description": "",
+        "enable_video_autoplay": true,
+        "enable_video_looping": true,
+        "image_height": "100vh",
+        "content_width": "medium",
+        "content_position": "md:items-center md:justify-center",
+        "text_alignment": "center",
+        "video_url_mobile": "",
+        "image_height_mobile": "auto",
+        "content_position_mobile": "items-center justify-center",
+        "text_alignment_mobile": "center",
+        "color_text": "#ffffff",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "#e0a580",
+        "gradient_highlight": "",
+        "color_button_text": "#171717",
+        "color_button_background": "#ffffff",
+        "color_button_gradient": "",
+        "color_overlay": "#000000",
+        "overlay_opacity": 50,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": true,
+        "rounded": true
+      }
+    },
+    "featured-product": {
+      "type": "featured-product",
+      "blocks": {
+        "text": {
+          "type": "text",
+          "settings": {
+            "icon": "none",
+            "iwidth": "custom",
+            "icon_width": 20,
+            "text": "{{ section.settings.product.vendor }}",
+            "text_size": "text-base"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "title_size": "product-title-md",
+            "title_size_mobile": "product-title-md",
+            "show_price": true,
+            "show_rating": true
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "text_size": "text-base"
+          }
+        },
+        "countdown": {
+          "type": "countdown",
+          "settings": {
+            "heading": "Hurry up!",
+            "subheading": "Sale end in:",
+            "color_text": "#e11d48",
+            "color_background": "#fff1f2",
+            "gradient_background": ""
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "show_variant_labels": true,
+            "picker_type": "button",
+            "enable_color_swatches": true,
+            "color_swatch_type": "color",
+            "size_chart": ""
+          }
+        },
+        "inventory": {
+          "type": "inventory",
+          "settings": {
+            "inventory_threshold": 15,
+            "show_inventory_transfer": true,
+            "show_inventory_quantity": "low",
+            "color_scheme": "accent-1"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": false,
+            "show_price": false,
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": false,
+            "enable_back_in_stock": false,
+            "show_back_in_stock_name": false,
+            "show_back_in_stock_phone": false
+          }
+        },
+        "pickup_availability": {
+          "type": "pickup_availability",
+          "settings": {}
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share",
+            "show_help_desk": true,
+            "help_label": "Need help?",
+            "help_page": "",
+            "help_page_external": false
+          }
+        },
+        "read_more": {
+          "type": "read_more",
+          "settings": {}
+        },
+        "spinning_text": {
+          "type": "spinning_text",
+          "settings": {
+            "text": "Featured product"
+          }
+        }
+      },
+      "block_order": [
+        "text",
+        "title",
+        "description",
+        "countdown",
+        "variant_picker",
+        "inventory",
+        "buy_buttons",
+        "pickup_availability",
+        "share",
+        "read_more",
+        "spinning_text"
+      ],
+      "disabled": true,
+      "settings": {
+        "product": "leder-schlussel-cover",
+        "enable_sticky_info": true,
+        "media_size": 64,
+        "gallery_layout": "thumbnail",
+        "thumbnail_position": "beside",
+        "image_ratio": "adapt_first",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_autoplay": true,
+        "enable_video_looping": true,
+        "mobile_layout": "full_width",
+        "image_ratio_mobile": "adapt_first",
+        "mobile_thumbnail": false,
+        "padding_top": 120,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": false,
+        "rounded": true
+      }
+    },
+    "image-comparison": {
+      "type": "image-comparison",
+      "blocks": {
+        "image-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/audi_vorher_bild.jpg",
+            "subheading": "",
+            "heading": "VORHER",
+            "content_position": "center",
+            "color_text": "#171715"
+          }
+        },
+        "image-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/audi_nachher_bild.jpg",
+            "subheading": "",
+            "heading": "NACHHER",
+            "content_position": "center",
+            "color_text": "#171715"
+          }
+        }
+      },
+      "block_order": [
+        "image-1",
+        "image-2"
+      ],
+      "settings": {
+        "layout": "horizontal",
+        "image_height": "900px",
+        "image_height_mobile": "300px",
+        "heading": "<em>Performance zum Festhalten.</em>",
+        "heading_size": "title-md",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h2",
+        "subheading": "Make it yours",
+        "description": "<p>Ergonomie, Griffigkeit und Ästhetik in perfekter Balance. Wir definieren Form, Durchmesser, Bezug und Nahtbild nach Ihren Vorgaben und fertigen ein Lenkrad, das Präzision und Persönlichkeit vereint.</p>",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "scribble",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "linear-gradient(90deg, rgba(155, 0, 0, 1), rgba(43, 43, 43, 1) 100%)",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 100,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "rich-text-2": {
+      "type": "rich-text",
+      "disabled": true,
+      "custom_css": [
+        "@media screen and (min-width: 1536px) and (max-width: 1920px) {.collage, .collage .title-wrapper {padding-inline: 0; }}",
+        "@media screen and (min-width: 1920px) {.collage, .collage .title-wrapper {padding-inline: var(--grid-gap); }}"
+      ],
+      "settings": {
+        "text_alignment": "left",
+        "text_alignment_mobile": "left",
+        "heading": "Wähle dein <em>Bundle</em>",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_width": "large",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "<p>Du hast die Wahl. Mit unserem Bundle-Builder kannst du jede beliebige Kombination aus unserer Produktpalette auswählen. Der einfachste Weg, um alle zufrieden zu stellen.</p>",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "scribble",
+        "highlighted_scribble": "squiggle-underline",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 120,
+        "padding_bottom": 52,
+        "divider": false,
+        "narrow": false,
+        "rounded": false
+      }
+    },
+    "product-bundle": {
+      "type": "product-bundle",
+      "disabled": true,
+      "custom_css": [
+        "@media screen and (min-width: 1536px) {.product-bundle {flex: 0 0 25%; } .product-bundle__sidebar {width: 100%; }}",
+        "@media screen and (min-width: 1920px) {.product-bundle-wrapper {padding-inline: calc(var(--grid-gap) * 2); }}"
+      ],
+      "settings": {
+        "collection": "",
+        "products": [
+          "leder-schlussel-cover",
+          "schalthebel",
+          "weekender-tasche"
+        ],
+        "product_limit": 6,
+        "columns": 3,
+        "columns_mobile": "1",
+        "minimum_quantity": 3,
+        "maximum_quantity": 3,
+        "prevent_duplicate_products": true,
+        "allow_quantity_change": true,
+        "quantity_increment": "1",
+        "quantity_minimum": "1",
+        "quantity_maximum": "",
+        "show_variant_labels": true,
+        "picker_type": "button",
+        "enable_color_swatches": true,
+        "color_swatch_type": "color",
+        "heading": "Dein Paket",
+        "heading_size": "lg:text-5xl text-2xl",
+        "heading_alignment": "text-left",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "<p>Füge mindestens 3 Produkte hinzu, um fortzufahren und spare 30%</p>",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "scrolling-text-1": {
+      "type": "scrolling-text",
+      "blocks": {
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<em><strong>Crafted to feel Iconic</strong></em>",
+            "text_size": 160,
+            "text_font": "body",
+            "highlighted_text": "stencil",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "text"
+      ],
+      "settings": {
+        "direction": "left",
+        "speed": 20,
+        "grid_horizontal": 70,
+        "enable_twin": false,
+        "enable_parallax": true,
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "padding_top": 120,
+        "padding_bottom": 120,
+        "divider": false,
+        "rounded": false
+      }
+    },
+    "countdown-timer": {
+      "type": "countdown-timer",
+      "blocks": {
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Countdown timer</p>",
+            "text_font": "body",
+            "text_size": "subtext-custom",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "spacing": {
+          "type": "spacing",
+          "settings": {
+            "height": 24,
+            "height_mobile": 16
+          }
+        },
+        "timer": {
+          "type": "timer",
+          "settings": {
+            "year": "2026",
+            "month": "01",
+            "day": "1",
+            "hour": "03",
+            "minute": "00",
+            "text_font": "heading",
+            "text_size": "title-lg tracking-heading",
+            "message": ""
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Now",
+            "button_link": "",
+            "button_style": "secondary",
+            "button_size": "md",
+            "button_external": false,
+            "button_icon": true
+          }
+        }
+      },
+      "block_order": [
+        "text",
+        "spacing",
+        "timer",
+        "button"
+      ],
+      "disabled": true,
+      "settings": {
+        "transparent_header": false,
+        "image": "shopify://shop_images/bild.png",
+        "image_height": "750px",
+        "content_width": "medium",
+        "content_position": "md:items-center md:justify-center",
+        "text_alignment": "center",
+        "image_height_mobile": "500px",
+        "content_position_mobile": "items-center justify-center",
+        "text_alignment_mobile": "center",
+        "color_text": "#ffffff",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "#fcd34d",
+        "gradient_highlight": "",
+        "color_button_text": "#171717",
+        "color_button_background": "#ffffff",
+        "color_button_gradient": "",
+        "color_overlay": "#000000",
+        "overlay_opacity": 30,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": true,
+        "rounded": true,
+        "enable_parallax": true,
+        "parallax_direction": "vertical"
+      }
+    },
+    "shop-the-look": {
+      "type": "shop-the-look",
+      "blocks": {
+        "product-1": {
+          "type": "product",
+          "settings": {
+            "product": "pss-digital-performance-wheel-audi-rs6-c8",
+            "color_text": "#ffffff",
+            "vertical": 32,
+            "horizontal": 20,
+            "vertical_mobile": 25,
+            "horizontal_mobile": 25
+          }
+        },
+        "product-2": {
+          "type": "product",
+          "settings": {
+            "product": "pss-carbon-interieur-set-audi-rs6-rs7-a6-a7-c8",
+            "color_text": "#ffffff",
+            "vertical": 69,
+            "horizontal": 32,
+            "vertical_mobile": 75,
+            "horizontal_mobile": 65
+          }
+        },
+        "product-3": {
+          "type": "product",
+          "settings": {
+            "product": "pss-race-display-beifahrerseite-audi-rs6-c8",
+            "color_text": "#ffffff",
+            "vertical": 49,
+            "horizontal": 67,
+            "vertical_mobile": 50,
+            "horizontal_mobile": 50
+          }
+        },
+        "product_famp4L": {
+          "type": "product",
+          "settings": {
+            "product": "pss-iconic-edition-passend-fur-audi-rs6-c8",
+            "color_text": "#ffffff",
+            "vertical": 20,
+            "horizontal": 50,
+            "vertical_mobile": 50,
+            "horizontal_mobile": 50
+          }
+        }
+      },
+      "block_order": [
+        "product-1",
+        "product-2",
+        "product-3",
+        "product_famp4L"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/rs6shop.jpg",
+        "heading": "Von Serie zu Premiumklasse",
+        "heading_size": "title-md",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "<p>Mit unseren premium Produkten wird jedes Modell zum Einzelstück. Edle Materialien, saubere Verarbeitung, perfekter Fit.</p>",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "scribble",
+        "highlighted_scribble": "squiggle-underline",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 40,
+        "padding_top": 100,
+        "padding_bottom": 100,
+        "divider": false,
+        "full_width": false,
+        "rounded": true
+      }
+    },
+    "images_with_text_MVRRYq": {
+      "type": "images-with-text",
+      "blocks": {
+        "heading_94UMLH": {
+          "type": "heading",
+          "settings": {
+            "heading": "PS-Manufaktur Editionen",
+            "heading_size": "title-md",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_XabBPt": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Unsere PS Manufaktur Editionen bringen Leder, Alcantara, Carbon und präzise Details in dein Auto. Keine monatelange Wartezeit, kein wochenlanges Auto-Abgeben – du wählst online dein Paket, bestellst, kommst nur zum Umbau und erhältst dein veredeltes Interieur innerhalb von wenigen Tagen.</p>",
+            "text_font": "body",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "button_qtj7xY": {
+          "type": "button",
+          "settings": {
+            "button_label": "Jetzt entdecken",
+            "button_link": "shopify://products/pss-design-red-classic-edition-passend-fur-mercedes-g-klasse-w463a",
+            "button_style": "primary",
+            "button_size": "md",
+            "button_external": false,
+            "button_icon": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_94UMLH",
+        "text_XabBPt",
+        "button_qtj7xY"
+      ],
+      "name": "Images with text",
+      "settings": {
+        "image": "shopify://shop_images/SEB_1488.jpg",
+        "image_2": "shopify://shop_images/SEB_1458.jpg",
+        "image_ratio": "portrait",
+        "image_width": "small",
+        "layout": "text_first",
+        "text_alignment": "left",
+        "text_alignment_mobile": "left",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": true
+      }
+    },
+    "featured_product_rXy4rr": {
+      "type": "featured-product",
+      "blocks": {
+        "title_bWFriB": {
+          "type": "title",
+          "settings": {
+            "title_size": "product-title-md",
+            "title_size_mobile": "product-title-md",
+            "show_price": true,
+            "show_rating": true
+          }
+        },
+        "share_BNpkyB": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share",
+            "show_help_desk": true,
+            "help_label": "Need help?",
+            "help_page": "",
+            "help_page_external": false
+          }
+        },
+        "read_more_94ikjQ": {
+          "type": "read_more",
+          "settings": {}
+        },
+        "spinning_text_96dig7": {
+          "type": "spinning_text",
+          "settings": {
+            "text": "NEU Bei PS Sattlerei"
+          }
+        }
+      },
+      "block_order": [
+        "title_bWFriB",
+        "share_BNpkyB",
+        "read_more_94ikjQ",
+        "spinning_text_96dig7"
+      ],
+      "name": "t:sections.featured-product.name",
+      "settings": {
+        "product": "pss-waben-carbon-interieur-set-audi-rs6-c8",
+        "enable_sticky_info": true,
+        "media_size": 66,
+        "gallery_layout": "thumbnail",
+        "thumbnail_position": "below",
+        "image_ratio": "adapt_first",
+        "image_zoom": "lightbox",
+        "hide_variants": true,
+        "enable_video_autoplay": false,
+        "enable_video_looping": false,
+        "mobile_layout": "partial",
+        "image_ratio_mobile": "adapt_first",
+        "mobile_thumbnail": false,
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "testimonials-banner": {
+      "type": "testimonials-banner",
+      "blocks": {
+        "testimonial-1": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "quote",
+            "text": "<p>Absolut top! Ich bin wirklich begeistert in der heutigen Zeit, noch eine Sattlerei gefunden zu haben in der Kundenzufriedenheit an erster Stelle steht.</p>",
+            "author": "Tom S.",
+            "author_info": "",
+            "author_url": "",
+            "image_ratio": "rounded",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "testimonial-2": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "quote",
+            "text": "<p>Die Kommunikation war jederzeit freundlich und zuverlässig, die Durchführung absolut professionell und die Abholung verlief reibungslos. Rundum ein Top-Service - sehr empfehlenswert! </p>",
+            "author": "Daniel N.",
+            "author_info": "",
+            "author_url": "",
+            "image_ratio": "rounded",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "testimonial-3": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "quote",
+            "text": "<p>Das Ergebnis hat meine Erwartungen um ein vielfaches übertroffen. Das Carbon, die roten Nähte und wie es in der Hand liegt, absolute Spitzenarbeit. Vielen Dank an Dennis und das tolle Team. </p>",
+            "author": "Carsten B.",
+            "author_info": "",
+            "author_url": "",
+            "image_ratio": "rounded",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial-1",
+        "testimonial-2",
+        "testimonial-3"
+      ],
+      "settings": {
+        "transparent_header": false,
+        "image": "shopify://shop_images/amg_gts.png",
+        "image_height": "750px",
+        "content_position": "md:items-center md:justify-center",
+        "image_height_mobile": "500px",
+        "content_position_mobile": "items-center justify-center",
+        "color_text": "#ffffff",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 40,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": true,
+        "rounded": true,
+        "enable_parallax": true,
+        "parallax_direction": "vertical"
+      }
+    },
+    "scrolling-text-2": {
+      "type": "scrolling-text",
+      "blocks": {
+        "image-1": {
+          "type": "image",
+          "settings": {
+            "height": 60,
+            "link": "",
+            "accessibility_info": "",
+            "external": false
+          }
+        },
+        "image-2": {
+          "type": "image",
+          "settings": {
+            "height": 60,
+            "link": "",
+            "accessibility_info": "",
+            "external": false
+          }
+        },
+        "image-3": {
+          "type": "image",
+          "settings": {
+            "height": 60,
+            "link": "",
+            "accessibility_info": "",
+            "external": false
+          }
+        },
+        "image-4": {
+          "type": "image",
+          "settings": {
+            "height": 60,
+            "link": "",
+            "accessibility_info": "",
+            "external": false
+          }
+        },
+        "image-5": {
+          "type": "image",
+          "settings": {
+            "height": 60,
+            "link": "",
+            "accessibility_info": "",
+            "external": false
+          }
+        },
+        "image-6": {
+          "type": "image",
+          "settings": {
+            "height": 60,
+            "link": "",
+            "accessibility_info": "",
+            "external": false
+          }
+        },
+        "image-7": {
+          "type": "image",
+          "settings": {
+            "height": 60,
+            "link": "",
+            "accessibility_info": "",
+            "external": false
+          }
+        }
+      },
+      "block_order": [
+        "image-1",
+        "image-2",
+        "image-3",
+        "image-4",
+        "image-5",
+        "image-6",
+        "image-7"
+      ],
+      "disabled": true,
+      "settings": {
+        "direction": "right",
+        "speed": 5,
+        "grid_horizontal": 140,
+        "enable_twin": true,
+        "enable_parallax": true,
+        "color_text": "",
+        "color_background": "#fde68a",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "divider": false,
+        "rounded": false
+      }
+    },
+    "blog-posts-collage": {
+      "type": "blog-posts-collage",
+      "disabled": true,
+      "settings": {
+        "blog": "",
+        "post_limit": 3,
+        "show_view_all": true,
+        "image_ratio": "landscape",
+        "show_tags": true,
+        "show_date": true,
+        "show_comments": true,
+        "show_author": false,
+        "show_excerpt": true,
+        "heading": "Latest Stories",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 100,
+        "padding_bottom": 100,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    }
+  },
+  "order": [
+    "slideshow",
+    "logo_list_3Xb3n7",
+    "rich-text-1",
+    "collection_list_jzjahX",
+    "collection-list",
+    "video-with-text-overlay",
+    "featured-product",
+    "image-comparison",
+    "rich-text-2",
+    "product-bundle",
+    "scrolling-text-1",
+    "countdown-timer",
+    "shop-the-look",
+    "images_with_text_MVRRYq",
+    "featured_product_rXy4rr",
+    "testimonials-banner",
+    "scrolling-text-2",
+    "blog-posts-collage"
+  ]
+}

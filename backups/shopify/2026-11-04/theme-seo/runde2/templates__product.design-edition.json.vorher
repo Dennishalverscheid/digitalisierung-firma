@@ -1,0 +1,964 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main-product": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "settings": {
+            "icon": "none",
+            "iwidth": "custom",
+            "icon_width": 20,
+            "text": "{{ product.vendor }}",
+            "text_size": "text-base"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "title_size": "product-title-md",
+            "title_size_mobile": "product-title-md",
+            "show_price": true,
+            "show_rating": true
+          }
+        },
+        "countdown": {
+          "type": "countdown",
+          "settings": {
+            "heading": "Hurry up!",
+            "subheading": "Sale end in:",
+            "color_text": "#e11d48",
+            "color_background": "#fff1f2",
+            "gradient_background": ""
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "show_variant_labels": true,
+            "picker_type": "button",
+            "enable_color_swatches": true,
+            "color_swatch_type": "color",
+            "size_chart": ""
+          }
+        },
+        "liquid_QGPNmH": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "📦 Versandfertig bzw. montagebereit nach 3–6 Wochen Fertigungszeit"
+          }
+        },
+        "inventory": {
+          "type": "inventory",
+          "disabled": true,
+          "settings": {
+            "inventory_threshold": 15,
+            "show_inventory_transfer": true,
+            "show_inventory_quantity": "low",
+            "color_scheme": "accent-1"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": true,
+            "show_price": false,
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": true,
+            "enable_back_in_stock": false,
+            "show_back_in_stock_name": false,
+            "show_back_in_stock_phone": false
+          }
+        },
+        "pickup_availability": {
+          "type": "pickup_availability",
+          "disabled": true,
+          "settings": {}
+        },
+        "share": {
+          "type": "share",
+          "disabled": true,
+          "settings": {
+            "share_label": "Share",
+            "show_help_desk": true,
+            "help_label": "Need help?",
+            "help_type": "drawer",
+            "help_page": "",
+            "help_page_external": false
+          }
+        },
+        "complementary": {
+          "type": "complementary",
+          "settings": {
+            "heading": "Pairs well with",
+            "product_limit": 4,
+            "show_vendor": false,
+            "show_price": true
+          }
+        },
+        "sticky_buy_button": {
+          "type": "sticky_buy_button",
+          "settings": {}
+        },
+        "pss_price_note": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<p class=\"pss-price-note\" style=\"font-size:14px;margin:4px 0 0;opacity:.8\">inkl. MwSt., zzgl. <a href=\"/policies/shipping-policy\" style=\"text-decoration:underline\">Versandkosten</a></p>"
+          }
+        },
+        "pss_safety": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "{% render 'pss-produktsicherheit' %}"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "pss_price_note",
+        "countdown",
+        "variant_picker",
+        "liquid_QGPNmH",
+        "inventory",
+        "buy_buttons",
+        "pss_safety",
+        "pickup_availability",
+        "share",
+        "complementary",
+        "sticky_buy_button"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "media_size": 60,
+        "gallery_layout": "scroll",
+        "thumbnail_position": "below",
+        "image_ratio": "adapt_first",
+        "image_zoom": "lightbox",
+        "hide_variants": true,
+        "enable_video_autoplay": true,
+        "enable_video_looping": true,
+        "mobile_layout": "full_width",
+        "image_ratio_mobile": "adapt_first",
+        "mobile_thumbnail": false,
+        "padding_top": 0,
+        "padding_bottom": 84,
+        "divider": false,
+        "full_width": true,
+        "rounded": false
+      }
+    },
+    "help-drawer": {
+      "type": "help-drawer",
+      "blocks": {
+        "content-1": {
+          "type": "content",
+          "settings": {
+            "icon": "rocket",
+            "heading": "Shipping Information",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "color_text": "#b45309",
+            "color_background": "#fffbeb",
+            "gradient_background": "",
+            "color_highlight": "#ffddbf",
+            "gradient_highlight": ""
+          }
+        },
+        "content-2": {
+          "type": "content",
+          "settings": {
+            "icon": "headphone",
+            "heading": "Customer Support",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "color_text": "#0369a1",
+            "color_background": "#f0f9ff",
+            "gradient_background": "",
+            "color_highlight": "#ffddbf",
+            "gradient_highlight": ""
+          }
+        },
+        "content-3": {
+          "type": "content",
+          "settings": {
+            "icon": "chat_bubble",
+            "heading": "FAQ’s",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "color_text": "#be123c",
+            "color_background": "#fff1f2",
+            "gradient_background": "",
+            "color_highlight": "#ffddbf",
+            "gradient_highlight": ""
+          }
+        },
+        "content-4": {
+          "type": "content",
+          "settings": {
+            "icon": "phone",
+            "heading": "Contact Us",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "color_text": "#4d7c0f",
+            "color_background": "#f7fee7",
+            "gradient_background": "",
+            "color_highlight": "#ffddbf",
+            "gradient_highlight": ""
+          }
+        },
+        "content_QEche7": {
+          "type": "content",
+          "settings": {
+            "icon": "none",
+            "heading": "Information",
+            "text": "<p>Share contact information, store details, and brand content with your customers.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "color_text": "#fafafa",
+            "color_background": "#1f1f1f",
+            "gradient_background": "",
+            "color_highlight": "#ffddbf",
+            "gradient_highlight": ""
+          }
+        }
+      },
+      "block_order": [
+        "content-1",
+        "content-2",
+        "content-3",
+        "content-4",
+        "content_QEche7"
+      ],
+      "disabled": true,
+      "settings": {
+        "heading": "Need help?",
+        "description": "<p>If you have any questions, you are always welcome to contact us. We'll get back to you as soon as possible, within 24 hours on weekdays.</p>"
+      }
+    },
+    "video_with_text_Yjy8jK": {
+      "type": "video-with-text",
+      "blocks": {
+        "heading_fMczYE": {
+          "type": "heading",
+          "settings": {
+            "heading": "So entsteht deine PSS Design Edition – Produktion, Ablauf & Verwandlung im Detail",
+            "heading_size": "title-md",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_BX9DXq": {
+          "type": "text",
+          "settings": {
+            "text": "<p>In diesem Video siehst du, wie deine neue Design Edition zum Leben erweckt wird:<br/><br/>aus Serien-Interieur wird PSS Design Edition – mit Alcantara, Nappa, Carbon und OEM-nahem Finish, alles in echter Manufakturarbeit gebaut.</p>",
+            "text_font": "body",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "heading_fMczYE",
+        "text_BX9DXq"
+      ],
+      "name": "Video with text",
+      "settings": {
+        "video_url": "https://www.youtube.com/watch?v=kThwpy6s4U8",
+        "cover_image": "shopify://shop_images/image00011.jpg",
+        "description": "",
+        "enable_video_autoplay": false,
+        "enable_video_looping": false,
+        "image_height": "adapt",
+        "video_width": "medium",
+        "layout": "video_first",
+        "text_alignment": "left",
+        "content_position": "align-self-center",
+        "video_url_mobile": "",
+        "image_height_mobile": "auto",
+        "text_alignment_mobile": "left",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_background_2": "",
+        "gradient_background_2": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "vertical"
+      }
+    },
+    "faq_Hmqj6R": {
+      "type": "faq",
+      "blocks": {
+        "question_TipeU7": {
+          "type": "question",
+          "settings": {
+            "title": "Produktbeschreibung",
+            "text": "{{ product.description }}",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question_rWDrYk": {
+          "type": "question",
+          "settings": {
+            "title": "Wichtige Informationen",
+            "text": "{{ product.metafields.custom.extra_informationen_design_edition | metafield_tag }}",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "question_TipeU7",
+        "question_rWDrYk"
+      ],
+      "name": "FAQ",
+      "settings": {
+        "style": "with-border",
+        "heading": "Informationen",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "color_overlay": "#ffffff",
+        "overlay_opacity": 4,
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "narrow": true,
+        "rounded": false
+      }
+    },
+    "images_with_text_overlay_mR6T6K": {
+      "type": "images-with-text-overlay",
+      "blocks": {
+        "subheading_wWMUjD": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Design Edition",
+            "subheading_size": "subtitle-md",
+            "secondary_color": true
+          }
+        },
+        "heading_amXcPP": {
+          "type": "heading",
+          "settings": {
+            "heading": "Von Serie zu Statement",
+            "heading_size": "title-lg tracking-heading",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_HWUm9y": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Die exklusive Design-Edition für ein spürbar edleres Interieur.</p>",
+            "text_font": "body",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_wWMUjD",
+        "heading_amXcPP",
+        "text_HWUm9y"
+      ],
+      "name": "Images with text overlay",
+      "settings": {
+        "transparent_header": false,
+        "image_height": "650px",
+        "content_width": "small",
+        "content_position": "md:items-end md:justify-start",
+        "text_alignment": "left",
+        "image_1": "shopify://shop_images/image00206-schwarz.jpg",
+        "image_2": "shopify://shop_images/image00211-schwarz.jpg",
+        "image_3": "shopify://shop_images/image00215-schwarz_9e3c77d9-2743-4b0a-9e8a-85ee416f3ea5.jpg",
+        "image_height_mobile": "auto",
+        "content_position_mobile": "items-end justify-start",
+        "text_alignment_mobile": "left",
+        "color_text": "#ffffff",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "#ffffff",
+        "gradient_highlight": "",
+        "color_button_text": "#171717",
+        "color_button_background": "#ffffff",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 100,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": true,
+        "rounded": false,
+        "enable_parallax": true
+      }
+    },
+    "timeline_hwMKwJ": {
+      "type": "timeline",
+      "blocks": {
+        "content_c6q7gX": {
+          "type": "content",
+          "settings": {
+            "image": "shopify://shop_images/image00206-rot.jpg",
+            "subheading": "01",
+            "heading": "<strong>Konfiguration </strong>",
+            "heading_tag": "h2",
+            "text": "<p>Im ersten Schritt wählst du ganz einfach die gewünschte <strong>PSS Design Edition</strong> direkt im Online-Shop. Damit legst du fest, welche Bauteile wir für dich vorbereiten und in welchem Stil dein Interieur später veredelt wird. </p><p>Jede Auswahl bildet die Basis für dein persönliches Design – genau abgestimmt auf dein Fahrzeug und deinen Geschmack.</p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "content_hrwddQ": {
+          "type": "content",
+          "settings": {
+            "image": "shopify://shop_images/image00207.jpg",
+            "subheading": "02",
+            "heading": "Jetzt entsteht dein neues Interieur",
+            "heading_tag": "h2",
+            "text": "<p>Alle ausgewählten Bauteile werden in unserer Manufaktur nach deinen Wunschmaterialien, Farben und Nahtbildern vorbereitet – komplett ohne dass du dein Fahrzeug abliefern musst.</p><p>Während du ganz normal weiterfährst, veredeln wir:</p><ul><li>originale Basisbauteile,<br/>exakt nach deiner Konfiguration,<br/>in OEM-naher Qualität und echter Handarbeit.</li></ul>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "content_RWGAzW": {
+          "type": "content",
+          "settings": {
+            "image": "shopify://shop_images/image00204.jpg",
+            "subheading": "03",
+            "heading": "Qualitätskontrolle in OEM Standard",
+            "heading_tag": "h2",
+            "text": "<p>Bevor dein neues Interieur in dein Fahrzeug einzieht, durchläuft jedes einzelne Bauteil unsere interne Manufaktur-Qualitätskontrolle. Nähte, Materialien, Kanten, Übergänge – alles muss sauber, stimmig und makellos sein. Nur was unseren PSS Qualitätsanspruch zu 100 % erfüllt, geht in die Montage.</p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "content_myQyDq": {
+          "type": "content",
+          "settings": {
+            "image": "shopify://shop_images/image00230.jpg",
+            "subheading": "04",
+            "heading": "Montagetermin vereinbaren oder Versand per Spedition",
+            "heading_tag": "h2",
+            "text": "<p>Sobald deine Design Edition die Qualitätskontrolle bestanden hat, folgt der letzte Schritt: der Einbau.<br/><br/>Entweder du bringst dein Fahrzeug für ca. 3 Tage zu uns – wir montieren alles vor Ort – oder wir senden das komplette PSS Paket per Spedition an deine Werkstatt. So bekommst du dein veredeltes Interieur ohne lange Standzeit und mit perfekt vorbereitetem Einbau.</p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "primary",
+            "button_external": false,
+            "button_icon": true,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "content_c6q7gX",
+        "content_hrwddQ",
+        "content_RWGAzW",
+        "content_myQyDq"
+      ],
+      "name": "Timeline",
+      "settings": {
+        "show_navigation": true,
+        "layout": "image_first",
+        "image_ratio": "portrait",
+        "image_ratio_mobile": "wide",
+        "heading": "Schritte & Ablauf",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "image-with-text-1": {
+      "type": "image-with-text",
+      "blocks": {
+        "image": {
+          "type": "image",
+          "settings": {
+            "image_width": "custom",
+            "image_max_width": 50,
+            "image_max_width_mobile": 50
+          }
+        },
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Perfektion bis ins Detail",
+            "heading_size": "title-md",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Ob maßgeschneiderte Veredelung oder hochwertige Performance-Teile – bei uns findest du alles für dein einzigartiges Fahrzeug.</p>",
+            "text_font": "body",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "image",
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/image00213-rot.jpg",
+        "image_height": "600px",
+        "image_width": "medium",
+        "layout": "image_first",
+        "text_alignment": "left",
+        "content_position": "align-self-center",
+        "image_height_mobile": "400px",
+        "text_alignment_mobile": "left",
+        "color_text": "#171717",
+        "color_background": "",
+        "gradient_background": "",
+        "color_background_2": "#fafafa",
+        "gradient_background_2": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "vertical"
+      }
+    },
+    "image-with-text-2": {
+      "type": "image-with-text",
+      "blocks": {
+        "image": {
+          "type": "image",
+          "settings": {
+            "image_width": "custom",
+            "image_max_width": 50,
+            "image_max_width_mobile": 50
+          }
+        },
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Handwerkskunst auf höchstem Niveau</strong>",
+            "heading_size": "title-md",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Jedes Detail zählt – feinste Materialien und präzise Verarbeitung machen den Unterschied. Qualität, die du sehen und fühlen kannst.</p>",
+            "text_font": "body",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "image",
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/alle_produkte_6.png",
+        "image_height": "600px",
+        "image_width": "medium",
+        "layout": "text_first",
+        "text_alignment": "left",
+        "content_position": "align-self-center",
+        "image_height_mobile": "400px",
+        "text_alignment_mobile": "left",
+        "color_text": "#171717",
+        "color_background": "",
+        "gradient_background": "",
+        "color_background_2": "#fafafa",
+        "gradient_background_2": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": false,
+        "parallax_direction": "vertical"
+      }
+    },
+    "product-details": {
+      "type": "product-details",
+      "blocks": {
+        "collapsible_tab-1": {
+          "type": "collapsible_tab",
+          "settings": {
+            "icon": "none",
+            "iwidth": "custom",
+            "icon_width": 24,
+            "heading": "Collapsible row 1",
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "metafields": "",
+            "text_size": "text-base"
+          }
+        },
+        "collapsible_tab-2": {
+          "type": "collapsible_tab",
+          "settings": {
+            "icon": "none",
+            "iwidth": "custom",
+            "icon_width": 24,
+            "heading": "Collapsible row 2",
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "metafields": "",
+            "text_size": "text-base"
+          }
+        },
+        "collapsible_tab-3": {
+          "type": "collapsible_tab",
+          "settings": {
+            "icon": "none",
+            "iwidth": "custom",
+            "icon_width": 24,
+            "heading": "Collapsible row 3",
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "metafields": "",
+            "text_size": "text-base"
+          }
+        },
+        "collapsible_tab-4": {
+          "type": "collapsible_tab",
+          "settings": {
+            "icon": "none",
+            "iwidth": "custom",
+            "icon_width": 24,
+            "heading": "Collapsible row 4",
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "metafields": "",
+            "text_size": "text-base"
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_tab-1",
+        "collapsible_tab-2",
+        "collapsible_tab-3",
+        "collapsible_tab-4"
+      ],
+      "disabled": true,
+      "settings": {
+        "style": "with-border",
+        "open_first_row": true,
+        "specifications_heading": "",
+        "heading": "Product details",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "#000000",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 28,
+        "padding_bottom": 28,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "faq": {
+      "type": "faq",
+      "blocks": {
+        "question-1": {
+          "type": "question",
+          "settings": {
+            "title": "Welche Materialien verwendet ihr für eure Produkte?",
+            "text": "<p>Wir arbeiten ausschließlich mit Materialien, die auch in modernen Premiumfahrzeugen eingesetzt werden – oder diese sogar übertreffen. Alles wird so ausgewählt, dass Optik, Haptik und Haltbarkeit auf <strong>Manufaktur- und OEM-Niveau</strong> liegen.</p><p><strong>Unsere Hauptmaterialien:</strong></p><ul><li><br/><strong>Originales Alcantara®</strong> – hochwertig, griffig, sportlich, perfekt für Lenkräder, Armaturenbrett und Türverkleidungen<br/></li><li><br/><strong>Premium Nappa-Leder</strong> – weich, robust, edel, in vielen Farben und Qualitäten<br/></li><li><br/><strong>Echtcarbon</strong> (Gloss, Matt, Forged/Forged Carbon) – handlaminiert und hochveredelt<br/></li><li><br/><strong>Lackierte & lasierte Bauteile</strong> – hochwertige Oberflächenveredelung für Spangen, Leisten und Akzente<br/></li><li><br/><strong>Hochfeste OEM-Kunststoffbasisteile</strong> – dienen als Grundlage für unsere Austauschpakete<br/></li><li><br/><strong>Farb- & Nahtmaterialien in OEM-Qualität</strong> – exakt abgestimmt auf das originale Interieur deines Fahrzeugs<br/></li></ul><p>Jedes Material wird so gewählt und verarbeitet, dass es aussieht, als wäre es <strong>ab Werk in deinem Auto</strong> – nur feiner, wertiger und deutlich exklusiver.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question-2": {
+          "type": "question",
+          "settings": {
+            "title": "<strong> Kann ich mein Fahrzeug individuell anpassen lassen?</strong>",
+            "text": "<p><strong>Natürlich – genau das ist unsere Stärke.</strong></p><p>Unsere Manufaktur arbeitet nicht nach starren Vorgaben, sondern nach deinem Geschmack.<br/><br/>Wenn du etwas Individuelles möchtest, setzen wir es mit dir gemeinsam um:</p><ul><li><br/><strong>Eigene Farbkombinationen</strong> für Leder, Alcantara oder Carbon<br/></li><li><br/><strong>Wunsch-Nähte</strong> (Ton-in-Ton, Kontrast, Motorsport-Optik, Waben usw.)<br/></li><li><br/><strong>Spezielle Materialien</strong> oder Materialmix<br/></li><li><br/><strong>Lasuren & Lackierungen</strong> in deiner Wunschfarbe<br/></li><li><br/><strong>Komplett eigene Designs</strong> für Armaturenbrett, Türen, Sitze oder Lenkrad<br/></li></ul><p>Wenn du im Shop nicht genau das findest, was du suchst, kannst du dich jederzeit melden.<br/><br/>Wir entwickeln dein <strong>maßgeschneidertes Interieurkonzept</strong>, abgestimmt auf dein Fahrzeug, deinen Stil und dein Budget – immer in OEM-naher Manufakturqualität.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question-3": {
+          "type": "question",
+          "settings": {
+            "title": "Wie lange dauert die Anfertigung?",
+            "text": "<p><strong>Die Anfertigung dauert je nach Design Edition in der Regel ca. 3–6 Wochen.</strong><br/><br/>Der wichtigste Punkt dabei: <strong>Dein Fahrzeug muss in dieser Zeit nicht bei uns stehen.</strong></p><p>Während du ganz normal weiterfährst, bereiten wir in unserer Manufaktur alle Bauteile vor – exakt nach deinen Material- und Designwünschen. Sobald dein Interieur-Paket fertig ist, vereinbaren wir den Einbautermin oder versenden es per Spedition an deine Werkstatt.</p><p>Du hast also <strong>keinen Fahrzeugverlust, keinen Stress und keine langen Standzeiten</strong>, sondern bekommst am Ende ein perfekt vorbereitetes Interieur in Manufakturqualität.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question-4": {
+          "type": "question",
+          "settings": {
+            "title": "Bietet ihr internationalen Versand an?",
+            "text": "<p><strong>Interieur-Pakete versenden wir per Spedition innerhalb Deutschlands.</strong></p><p>Für Lieferungen ins Ausland sprich uns bitte vorab an – wir prüfen Versand und Einbau individuell. Wir arbeiten bereits mit <strong>Partnern in Belgien, den Niederlanden, UK, der Schweiz, Österreich, den USA</strong> und weiteren Ländern zusammen, sodass der Einbau vor Ort in vielen Fällen unterstützt werden kann.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question-5": {
+          "type": "question",
+          "settings": {
+            "title": "Wie pflege ich meine neuen Leder- oder Alcantara-Produkte?",
+            "text": "<p>Wir empfehlen spezielle Pflegeprodukte für Leder und Alcantara, zum Beispiel unser <a href=\"/products/pss-alcantara-reiniger-set\">PSS Alcantara Reinigungsset</a>.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "contact": {
+          "type": "contact",
+          "settings": {
+            "heading": "Hast du noch Fragen?",
+            "text": "<p>Schreib uns einfach & wir melden uns so schnell wie möglich.</p>",
+            "show_phone": true,
+            "avatar_height": 60,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "question-1",
+        "question-2",
+        "question-3",
+        "question-4",
+        "question-5",
+        "contact"
+      ],
+      "settings": {
+        "style": "with-background",
+        "heading": "Fragen & Antworten",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "#ffffff",
+        "color_background": "#171717",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "#171717",
+        "color_button_background": "#ffffff",
+        "color_button_gradient": "",
+        "color_overlay": "#ffffff",
+        "overlay_opacity": 4,
+        "padding_top": 84,
+        "padding_bottom": 84,
+        "divider": false,
+        "narrow": false,
+        "rounded": false
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "product_limit": 6,
+        "columns": 4,
+        "carousel_on_desktop": true,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "heading": "Das könnte dir auch gefallen",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": true
+      }
+    },
+    "recently-viewed": {
+      "type": "recently-viewed",
+      "disabled": true,
+      "settings": {
+        "product_limit": 6,
+        "columns": 4,
+        "carousel_on_desktop": true,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "heading": "Recently Viewed",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    }
+  },
+  "order": [
+    "main-product",
+    "help-drawer",
+    "video_with_text_Yjy8jK",
+    "faq_Hmqj6R",
+    "images_with_text_overlay_mR6T6K",
+    "timeline_hwMKwJ",
+    "image-with-text-1",
+    "image-with-text-2",
+    "product-details",
+    "faq",
+    "product-recommendations",
+    "recently-viewed"
+  ]
+}
