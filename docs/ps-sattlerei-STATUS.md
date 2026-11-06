@@ -24,7 +24,24 @@ Autosattlerei/Manufaktur in Bergkamen: Carbon-/Leder-/Alcantara-Lenkräder (Vere
 
 - **SEO-Runde (04.11. nachmittags):** SEO-Titel und -Beschreibungen für alle 15 Kollektionen. Fließtexte für 5 Kollektionen. **Paket B Rollout** für 63 aktive Produkte: Titel, URLs ohne „-copy“ mit 301-Weiterleitung, SEO-Texte, 158 Alt-Texte. Alte Weiterleitungen ohne Ketten. Theme-Kopie „SEO-Korrekturen – Entwurf 04.11.2026“ (ID 188204875872) mit LocalBusiness-Daten. Die Theme-Kopie „Rechtssicher“ ist live.
 
+- **Agentur-Runde (05.–06.11.):**
+  - 5 Agenten-Berichte in `docs/agentur/`.
+  - Live: neue Produkttexte für 67 Produkte (Sie-Form, 6–8 Wochen, keine Preise im Text); Titel mit Schlüsselform 223/464 und Waben- bzw. klassisches Carbon; Seiten „Lenkrad neu beziehen“ und „Autosattlerei Bergkamen“ im Footer; Ratgeber-Artikel 634925056096 und 634925088864 als Entwürfe.
+  - Theme-Kopie 188204875872 fertig bis auf h1→h2 in `featured-product.liquid`: LocalBusiness-Daten, llms.txt, Pop-up aus, Social-Links, Beratungs-Link, Shop-the-Look-Text und Performance, Lieferzeit 6–8 Wochen, Hinweis zu Google-Bewertungen.
+
 ## Offen / zu prüfen ⏳
+0. **Inhaber:**
+   - h1→h2 (Z. 256/258 `featured-product.liquid`) in der Kopie ändern, dann die Kopie veröffentlichen
+   - Name der Versandmethode Spedition auf 6–8 Wochen ändern
+   - Startseiten-Titel und -Beschreibung setzen
+   - Ratgeber-Entwürfe gegenlesen
+1. Nächste Runde:
+   - Beratungs-Snippet (`05-conversion.md`)
+   - Kollektionen zusammenlegen (`02-seo-struktur.md`)
+   - Theme-Texte in Du-Form → Sie-Form
+   - strukturierte Daten BreadcrumbList/shippingDetails (`03-ki-sichtbarkeit.md`)
+   - Brevo mit Double-Opt-In und Consent
+   - neue Produkte
 1. Theme-Kopie „SEO-Korrekturen“: Inhaber ändert h1→h2 in `sections/featured-product.liquid` (Z. 256/258), entfernt den Fettdruck in der FAQ-Frage „Kann ich mein Fahrzeug individuell anpassen lassen?“ und veröffentlicht. Startseiten-Titel und -Beschreibung in den Präferenzen setzen. Kundenstimmen auf der Startseite: Quelle angeben (§ 5b Abs. 3 UWG). 2 Mercedes-Schlüsselcover „Schwarz“ doppelt. 2 Produkte „Carbon Interieur Set RS6 C8“ doppelt – Inhaber fragen
 2. **Widerrufsbutton-App** installieren (Empfehlung: „Widerrufsbutton § 356a BGB – mit Eingangsbestätigung“), in App-Einbettungen aktivieren, mit Seite „Vertrag widerrufen“ verknüpfen, Datenschutz ergänzen. Bis dahin Eingangsbestätigungen **manuell am selben Tag** (Vorlage `docs/ps-sattlerei-widerrufsbutton.md`)
 3. Datenschutz: Shopify-Automatik auf manuell umgestellt? YouTube-Video (Design Editionen) und Google Maps (Kontaktseite) erst nach Einwilligung laden – **noch nicht geprüft/umgesetzt**; Newsletter Double-Opt-In prüfen
