@@ -1,0 +1,10 @@
+{
+  "name": "content-factory-skill",
+  "private": true,
+  "type": "module",
+  "description": "Abhängigkeiten für den Hugging-Face-Scraper des Content-Factory-Skills (thecraighewitt/higgsfield-skills).",
+  "dependencies": {
+    "better-sqlite3": "^11.3.0",
+    "playwright": "^1.48.0"
+  }
+}

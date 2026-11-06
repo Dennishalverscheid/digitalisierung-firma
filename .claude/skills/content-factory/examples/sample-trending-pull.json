@@ -1,0 +1,63 @@
+{
+  "fetched_at": "2026-05-04T08:00:00Z",
+  "source": "https://huggingface.co/models?sort=trending",
+  "count": 5,
+  "_note": "Frozen fixture for offline demo / when live scrape is blocked. Replace with real raw-trends.json from the Playwright pull when available.",
+  "models": [
+    {
+      "full_name": "example-org/glacier-7b-vid",
+      "author": "example-org",
+      "name": "glacier-7b-vid",
+      "url": "https://huggingface.co/example-org/glacier-7b-vid",
+      "task": "text-to-video",
+      "downloads_raw": "248k",
+      "likes_raw": "3.1k",
+      "summary": "Open-weights 7B text-to-video model producing 8s clips at 1024x576. Trained on a mixed cinematic + UGC dataset. Apache 2.0 license. Demo space available for browser-based generation.",
+      "card_text": "text-to-video | Apache 2.0 | 8s clips | demo space available"
+    },
+    {
+      "full_name": "example-org/scribe-mini",
+      "author": "example-org",
+      "name": "scribe-mini",
+      "url": "https://huggingface.co/example-org/scribe-mini",
+      "task": "automatic-speech-recognition",
+      "downloads_raw": "112k",
+      "likes_raw": "780",
+      "summary": "On-device 80MB ASR model. Outperforms whisper-tiny on noisy audio benchmarks while running 4x faster on Apple Silicon.",
+      "card_text": "ASR | 80MB | on-device | apple silicon optimized"
+    },
+    {
+      "full_name": "example-org/illustra-1b",
+      "author": "example-org",
+      "name": "illustra-1b",
+      "url": "https://huggingface.co/example-org/illustra-1b",
+      "task": "text-to-image",
+      "downloads_raw": "94k",
+      "likes_raw": "1.4k",
+      "summary": "1B parameter text-to-image model specialized in flat illustration / editorial styles. Avoids photorealism. Good for editorial blog headers and slide visuals.",
+      "card_text": "text-to-image | editorial style | 1B params"
+    },
+    {
+      "full_name": "academic-lab/voiceclone-research-only",
+      "author": "academic-lab",
+      "name": "voiceclone-research-only",
+      "url": "https://huggingface.co/academic-lab/voiceclone-research-only",
+      "task": "text-to-speech",
+      "downloads_raw": "21k",
+      "likes_raw": "412",
+      "summary": "Research-only voice cloning. Non-commercial license. 30s reference audio required. Strong prosody but limited language coverage.",
+      "card_text": "TTS | research only | non-commercial"
+    },
+    {
+      "full_name": "example-org/copyedit-instruct",
+      "author": "example-org",
+      "name": "copyedit-instruct",
+      "url": "https://huggingface.co/example-org/copyedit-instruct",
+      "task": "text-generation",
+      "downloads_raw": "67k",
+      "likes_raw": "950",
+      "summary": "Instruction-tuned 3B model fine-tuned for copy editing tasks: tone matching, headline rewrites, caption tightening. Performs near GPT-4 on internal benchmarks at 1/100th the cost.",
+      "card_text": "text-generation | copyedit | 3B params | low cost"
+    }
+  ]
+}
