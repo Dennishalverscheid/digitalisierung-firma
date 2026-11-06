@@ -1,0 +1,132 @@
+{%- comment -%}
+  PS-Sattlerei: Elektronische Widerrufsfunktion (§ 356a BGB) – Seite „Vertrag widerrufen“.
+  Stufe 1: Button „Vertrag widerrufen“ · Stufe 2: Formular + Button „Widerruf bestätigen“.
+  Versand über das Shopify-Kontaktformular an die Shop-E-Mail. Eingangsbestätigung an den Kunden:
+  bis zur Einrichtung einer automatischen Lösung manuell und unverzüglich (Vorlage im Repository).
+{%- endcomment -%}
+<div class="pss-wr page-width">
+  <h1 class="pss-wr__title">{{ page.title }}</h1>
+
+  {%- form 'contact', id: 'pss-widerruf-form' -%}
+    {%- if form.posted_successfully? -%}
+      <div class="pss-wr__box pss-wr__success" role="status" tabindex="-1" id="pss-wr-success">
+        <h2>Ihr Widerruf ist bei uns eingegangen.</h2>
+        <p><strong>Eingang:</strong> {{ 'now' | date: '%d.%m.%Y, %H:%M Uhr' }}</p>
+        <div id="pss-wr-summary"></div>
+        <p>Sie erhalten unverzüglich eine Eingangsbestätigung per E-Mail an die von Ihnen angegebene Adresse. Bitte prüfen Sie auch Ihren Spam-Ordner.</p>
+        <p>Bitte senden Sie die Ware – soweit ein Widerrufsrecht besteht – innerhalb von 14 Tagen an: PS-Sattlerei GmbH, Marie-Curie-Straße 12, 59192 Bergkamen.</p>
+        <p><button type="button" class="button button--secondary" onclick="window.print()">Diese Bestätigung drucken / als PDF speichern</button></p>
+      </div>
+    {%- else -%}
+      <div class="pss-wr__intro rte">
+        {%- if page.content != blank -%}{{ page.content }}{%- endif -%}
+      </div>
+
+      {%- if form.errors -%}
+        <div class="pss-wr__box pss-wr__error" role="alert">
+          <p><strong>Bitte prüfen Sie Ihre Eingaben:</strong></p>
+          {{ form.errors | default_errors }}
+        </div>
+      {%- endif -%}
+
+      <div id="pss-wr-step1" class="pss-wr__step"{% if form.errors %} hidden{% endif %}>
+        <button type="button" class="button pss-wr__btn" id="pss-wr-start">Vertrag widerrufen</button>
+      </div>
+
+      <div id="pss-wr-step2" class="pss-wr__step"{% unless form.errors %} hidden{% endunless %}>
+        <input type="hidden" name="contact[Betreff]" value="WIDERRUF – elektronische Widerrufserklärung (§ 356a BGB)">
+        <input type="hidden" name="contact[Zeitpunkt der Absendung]" id="pss-wr-ts" value="">
+
+        <div class="pss-wr__field">
+          <label for="pss-wr-name">Vor- und Nachname *</label>
+          <input type="text" id="pss-wr-name" name="contact[name]" required autocomplete="name" value="{{ form.name }}">
+        </div>
+        <div class="pss-wr__field">
+          <label for="pss-wr-email">E-Mail-Adresse für die Eingangsbestätigung *</label>
+          <input type="email" id="pss-wr-email" name="contact[email]" required autocomplete="email" value="{{ form.email }}">
+        </div>
+        <div class="pss-wr__field">
+          <label for="pss-wr-order">Bestellnummer *</label>
+          <input type="text" id="pss-wr-order" name="contact[Bestellnummer]" required placeholder="z. B. #1001">
+        </div>
+        <div class="pss-wr__field">
+          <label for="pss-wr-date">Bestelldatum (falls bekannt)</label>
+          <input type="text" id="pss-wr-date" name="contact[Bestelldatum]" placeholder="TT.MM.JJJJ">
+        </div>
+        <div class="pss-wr__field">
+          <label for="pss-wr-items">Welche Artikel möchten Sie widerrufen?</label>
+          <textarea id="pss-wr-items" name="contact[Betroffene Artikel]" rows="3" placeholder="Leer lassen, wenn der gesamte Vertrag widerrufen werden soll"></textarea>
+        </div>
+        <div class="pss-wr__field">
+          <label for="pss-wr-body">Anmerkung (freiwillig)</label>
+          <textarea id="pss-wr-body" name="contact[body]" rows="3"></textarea>
+        </div>
+
+        <p class="pss-wr__note">Mit Klick auf „Widerruf bestätigen“ erklären Sie den Widerruf des oben bezeichneten Vertrags. Ihre Angaben verwenden wir ausschließlich zur Bearbeitung des Widerrufs (Art. 6 Abs. 1 lit. b und c DSGVO), siehe <a href="/policies/privacy-policy">Datenschutzerklärung</a>. Hinweise zum Widerrufsrecht und zu dessen Ausschluss bei Sonderanfertigungen finden Sie in der <a href="/policies/refund-policy">Widerrufsbelehrung</a>.</p>
+
+        <button type="submit" class="button pss-wr__btn" id="pss-wr-submit">Widerruf bestätigen</button>
+      </div>
+    {%- endif -%}
+  {%- endform -%}
+
+  <p class="pss-wr__alt">Alternativ können Sie Ihren Widerruf auch per E-Mail an <a href="mailto:sales@ps-sattlerei.com">sales@ps-sattlerei.com</a> oder per Post an PS-Sattlerei GmbH, Marie-Curie-Straße 12, 59192 Bergkamen erklären.</p>
+</div>
+
+<style>
+  .pss-wr{max-width:720px;margin:0 auto;padding:40px 16px 72px}
+  .pss-wr__title{margin-bottom:16px}
+  .pss-wr__intro{margin-bottom:24px}
+  .pss-wr__step{margin:16px 0}
+  .pss-wr__btn{min-width:240px}
+  .pss-wr__field{margin-bottom:14px;display:flex;flex-direction:column;gap:6px}
+  .pss-wr__field input,.pss-wr__field textarea{width:100%;padding:10px 12px;border:1px solid rgba(0,0,0,.3);border-radius:4px;font:inherit}
+  .pss-wr__note{font-size:14px;opacity:.85;margin:16px 0}
+  .pss-wr__box{border-radius:6px;padding:16px 20px;margin:16px 0}
+  .pss-wr__success{background:#ecfdf5;border:1px solid #10b981}
+  .pss-wr__error{background:#fef2f2;border:1px solid #ef4444}
+  .pss-wr__alt{font-size:14px;opacity:.8;margin-top:32px}
+  .pss-wr a{text-decoration:underline}
+  @media print{header,footer,.pss-wr__alt,.shopify-section-group-header-group,.shopify-section-group-footer-group{display:none!important}}
+</style>
+
+<script>
+  (function () {
+    var start = document.getElementById('pss-wr-start');
+    var s1 = document.getElementById('pss-wr-step1');
+    var s2 = document.getElementById('pss-wr-step2');
+    if (start && s1 && s2) {
+      start.addEventListener('click', function () {
+        s1.hidden = true; s2.hidden = false;
+        var f = document.getElementById('pss-wr-name'); if (f) f.focus();
+      });
+    }
+    var form = document.getElementById('pss-widerruf-form');
+    if (form && s2) {
+      form.addEventListener('submit', function () {
+        var ts = document.getElementById('pss-wr-ts');
+        if (ts) ts.value = new Date().toLocaleString('de-DE', { timeZone: 'Europe/Berlin' });
+        try {
+          var g = function (id) { var e = document.getElementById(id); return e ? e.value : ''; };
+          sessionStorage.setItem('pssWiderruf', JSON.stringify({
+            name: g('pss-wr-name'), email: g('pss-wr-email'), order: g('pss-wr-order'),
+            date: g('pss-wr-date'), items: g('pss-wr-items')
+          }));
+        } catch (e) {}
+      });
+    }
+    var sum = document.getElementById('pss-wr-summary');
+    if (sum) {
+      try {
+        var d = JSON.parse(sessionStorage.getItem('pssWiderruf') || 'null');
+        if (d) {
+          var esc = function (t) { var x = document.createElement('div'); x.textContent = t || '–'; return x.innerHTML; };
+          sum.innerHTML = '<p><strong>Name:</strong> ' + esc(d.name) + '<br><strong>E-Mail:</strong> ' + esc(d.email) +
+            '<br><strong>Bestellnummer:</strong> ' + esc(d.order) + '<br><strong>Bestelldatum:</strong> ' + esc(d.date) +
+            '<br><strong>Widerrufene Artikel:</strong> ' + esc(d.items || 'gesamter Vertrag') + '</p>';
+          sessionStorage.removeItem('pssWiderruf');
+        }
+      } catch (e) {}
+      var box = document.getElementById('pss-wr-success'); if (box) box.focus();
+    }
+  })();
+</script>

@@ -239,3 +239,8 @@ Betrifft 63 aktive Produkte (ohne die 2 Testprodukte, Entwürfe unverändert). J
 - **Versandmethode** (Profil „Interieur Versand“, DeliveryMethodDefinition 560883695712): Der Name lautet jetzt „Versand per Spedition (6 - 8 Wochen Fertigungszeit, ca. 8 Werktage Versand)“. Vorher stand dort 3 - 6 Wochen.
 - **Startseiten-Titel und -Beschreibung:** Die Admin-API bietet dafür kein Feld; ein Versuch über die Shop-Metafelder blieb wirkungslos und wurde wieder gelöscht. Lösung in der Theme-Kopie, Datei `layout/theme.liquid`: Auf der Startseite gelten jetzt „PS-Sattlerei – Lenkrad- & Interieur-Manufaktur Bergkamen“ und die neue Beschreibung; alle anderen Seiten unverändert. Das Original ist identisch mit `layout/theme.liquid` im Theme 188199272544. Vorschau geprüft.
 - **h1→h2 `featured-product.liquid`:** nicht per API möglich (121 KB). Bleibt Handarbeit des Inhabers (2 Zeilen).
+
+## Spam-Schutz (06.11.2026), Theme-Kopie 188204875872
+- Honeypot-Feld und Zeitsperre (3 s) eingebaut in `sections/contact-form.liquid` und `snippets/newsletter-form.liquid`; in `templates/page.widerruf.liquid` nur das Honeypot-Feld, keine Zeitsperre (gesetzliche Funktion).
+- Vorher- und Nachher-Dateien liegen in `theme-seo/spam/`. Vorschau geprüft: kein Fehler, Felder unsichtbar.
+- Inhaber: Spamschutz (Captcha) in den Onlineshop-Einstellungen einschalten; per API nicht möglich.
