@@ -234,3 +234,8 @@ Betrifft 63 aktive Produkte (ohne die 2 Testprodukte, Entwürfe unverändert). J
 - Originale aller Dateien: `theme-seo/runde2/*.vorher`.
 - Seiten neu: „Lenkrad neu beziehen“ (163686776928) und „Autosattlerei Bergkamen“ (163686842464), beide im Footer-Menü. Ratgeber-Entwürfe: Artikel 634925056096 und 634925088864.
 - Offen beim Inhaber: Name der Versandmethode „Versand per Spedition (3 - 6 Wochen Fertigungszeit …)“ auf 6–8 Wochen ändern.
+
+## 06.11.2026 – Aufträge Inhaber
+- **Versandmethode** (Profil „Interieur Versand“, DeliveryMethodDefinition 560883695712): Der Name lautet jetzt „Versand per Spedition (6 - 8 Wochen Fertigungszeit, ca. 8 Werktage Versand)“. Vorher stand dort 3 - 6 Wochen.
+- **Startseiten-Titel und -Beschreibung:** Die Admin-API bietet dafür kein Feld; ein Versuch über die Shop-Metafelder blieb wirkungslos und wurde wieder gelöscht. Lösung in der Theme-Kopie, Datei `layout/theme.liquid`: Auf der Startseite gelten jetzt „PS-Sattlerei – Lenkrad- & Interieur-Manufaktur Bergkamen“ und die neue Beschreibung; alle anderen Seiten unverändert. Das Original ist identisch mit `layout/theme.liquid` im Theme 188199272544. Vorschau geprüft.
+- **h1→h2 `featured-product.liquid`:** nicht per API möglich (121 KB). Bleibt Handarbeit des Inhabers (2 Zeilen).
