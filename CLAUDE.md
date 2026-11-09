@@ -23,6 +23,12 @@
 
 Aufruf z. B.: „Nutze den Sales Outreach Agenten und schreib eine LinkedIn-Nachricht an …“ oder „Lass den E-Mail-Manager meinen Posteingang durchgehen.“
 
+## Design-Skills (`.claude/skills/`)
+17 Design-Skills aus 7 MIT-lizenzierten Sammlungen (Quellen: `.claude/skills/QUELLEN.md`). Empfohlene Reihenfolge für Websites:
+1. **Bauen:** `landing-page-design` (Anfragen/Verkauf), `web-design-engineer` oder `build-awwwards-quality-sites` (Wirkung), `tastemaker` (Look aus Vorlage). Nur die kleinste passende Auswahl, Stile nicht mischen.
+2. **Bewegung:** `animate`, `emil-design-eng`.
+3. **Prüfen:** `better-layout`, `/critique-screen`, `interface-review` (braucht Git), Bewertung mit `web-design-engineer`; Liste umsetzen und erneut prüfen.
+
 ## ChatGPT
 Deutsche Fassungen für Custom GPTs liegen in `chatgpt-gpts/` (Anleitung in `chatgpt-gpts/README.md`).
 
