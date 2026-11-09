@@ -29,6 +29,19 @@ Autosattlerei/Manufaktur in Bergkamen: Carbon-/Leder-/Alcantara-Lenkräder (Vere
   - Live: neue Produkttexte für 67 Produkte (Sie-Form, 6–8 Wochen, keine Preise im Text); Titel mit Schlüsselform 223/464 und Waben- bzw. klassisches Carbon; Seiten „Lenkrad neu beziehen“ und „Autosattlerei Bergkamen“ im Footer; Ratgeber-Artikel 634925056096 und 634925088864 als Entwürfe.
   - Theme-Kopie 188204875872 fertig bis auf h1→h2 in `featured-product.liquid`: LocalBusiness-Daten, llms.txt, Pop-up aus, Social-Links, Beratungs-Link, Shop-the-Look-Text und Performance, Lieferzeit 6–8 Wochen, Hinweis zu Google-Bewertungen.
 
+- **09.11.:**
+  - Theme „SEO-Korrekturen“ ist live.
+  - Live: Kollektion Interieur-Teile, „Accessoires“ → „Schlüsselcover & Pflege“, Redirects R1–R5, neues Hauptmenü mit Untermenüs, Versandmethode 6–8 Wochen.
+  - Theme-Kopie **„Conversion – Entwurf 09.11.2026“ (188294103136) fertig**: Beratungs-Button, Vertrauensleiste, Sie-Form, BreadcrumbList/Rückgaberegel, FAQ-Fix.
+
+## ▶ Morgen weitermachen mit
+1. Inhaber prüft die Conversion-Kopie und veröffentlicht sie, danach eine Testanfrage über „Beratung anfragen“.
+2. Inhaber blendet 5 Kollektionen aus: VW Lenkräder, BMW/Mercedes/VW Interieur, Zubehör. Danach Redirects prüfen.
+3. Klären: „sparen Sie 30 %“ auf der Startseite (Bundle) – gibt es den Rabatt? Optionsnamen wie „Rot: Rot“ → „Nahtfarbe“/„Akzentfarbe“ vereinheitlichen.
+4. Neue Produkte (Entwurf „LED Magnet-Schaltwippen“ 15436404719712 existiert schon). Danach Higgsfield-Kampagne.
+5. E-Mail: Jimdo-Weiterleitung prüfen (Screenshots vom Inhaber), Gmail „Senden als“, Gmail-Connector, E-Mail-Manager-Agent.
+6. Später: Brevo mit Double-Opt-In und Consent, `locales/de.json` (11 Du-Texte), h1→h2 in `featured-product.liquid` (manuell).
+
 ## Offen / zu prüfen ⏳
 0. **Inhaber:**
    - h1→h2 (Z. 256/258 `featured-product.liquid`) in der Kopie ändern, dann die Kopie veröffentlichen
