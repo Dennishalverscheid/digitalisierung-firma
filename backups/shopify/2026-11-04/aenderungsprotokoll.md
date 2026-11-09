@@ -251,3 +251,10 @@ Betrifft 63 aktive Produkte (ohne die 2 Testprodukte, Entwürfe unverändert). J
 - 301-Weiterleitungen R1–R5 angelegt (IDs 616073986144–616074117216). Sie greifen erst, wenn die alten Kollektionen im Onlineshop ausgeblendet sind. Ausblenden per API ist blockiert, das macht der Inhaber: VW Lenkräder, BMW/Mercedes/VW Interieur-Pakete, Zubehör.
 - **Hauptmenü** neu, mit Untermenüs: Lenkräder, Interieur-Pakete, Schlüsselcover & Pflege, Manufaktur Bergkamen, Kontakt. Vorher-Stand: `hauptmenue_vorher_2026-11-09.json`.
 - Neue Theme-Kopie „Conversion – Entwurf 09.11.2026“ (188294103136): Daran arbeiten Agenten (Beratungs-Button, Vertrauensleiste, Sie-Form, strukturierte Daten).
+- Theme-Kopie 188294103136, fertig:
+  - Beratungs-Formular (`snippets/pss-beratung-anfragen.liquid`) mit Honeypot und Zeitsperre, nur bei Lenkrad, Interieur und Teilen
+  - Vertrauensleiste (`snippets/pss-vertrauen.liquid`)
+  - Sie-Form in den Templates, im Overlay und im Footer
+  - strukturierte Daten (BreadcrumbList, Rückgaberegel, FAQ-Fix in `sections/faq.liquid`)
+  - `pss-produktsicherheit` in Sie-Form
+  - Sicherungen unter `theme-conversion/`
