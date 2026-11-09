@@ -244,3 +244,10 @@ Betrifft 63 aktive Produkte (ohne die 2 Testprodukte, Entwürfe unverändert). J
 - Honeypot-Feld und Zeitsperre (3 s) eingebaut in `sections/contact-form.liquid` und `snippets/newsletter-form.liquid`; in `templates/page.widerruf.liquid` nur das Honeypot-Feld, keine Zeitsperre (gesetzliche Funktion).
 - Vorher- und Nachher-Dateien liegen in `theme-seo/spam/`. Vorschau geprüft: kein Fehler, Felder unsichtbar.
 - Inhaber: Spamschutz (Captcha) in den Onlineshop-Einstellungen einschalten; per API nicht möglich.
+
+## Struktur-Runde (09.11.2026), live
+- Neue Kollektion **Interieur-Teile** (511925354592, `/collections/interieur-teile`, Bedingung Produkttyp = Interieur-Teil), im Onlineshop veröffentlicht. Enthält 3 aktive Teile; 2 Entwürfe erscheinen automatisch, sobald sie aktiv sind.
+- Kollektion 282746880096 „Accessoires“ umbenannt in **„Schlüsselcover & Pflege“**, Handle unverändert.
+- 301-Weiterleitungen R1–R5 angelegt (IDs 616073986144–616074117216). Sie greifen erst, wenn die alten Kollektionen im Onlineshop ausgeblendet sind. Ausblenden per API ist blockiert, das macht der Inhaber: VW Lenkräder, BMW/Mercedes/VW Interieur-Pakete, Zubehör.
+- **Hauptmenü** neu, mit Untermenüs: Lenkräder, Interieur-Pakete, Schlüsselcover & Pflege, Manufaktur Bergkamen, Kontakt. Vorher-Stand: `hauptmenue_vorher_2026-11-09.json`.
+- Neue Theme-Kopie „Conversion – Entwurf 09.11.2026“ (188294103136): Daran arbeiten Agenten (Beratungs-Button, Vertrauensleiste, Sie-Form, strukturierte Daten).
