@@ -1,0 +1,40 @@
+{%- comment -%}
+  PS-Sattlerei: zusätzliche strukturierte Daten (Entwurf 09.11.2026), eingebunden am Ende von snippets/social-meta-tags.liquid.
+  - BreadcrumbList auf Produktseiten (Startseite › Kollektion › Produkt) und Kollektionsseiten (Startseite › Kollektion).
+    Kollektion auf Produktseiten: aktueller Kollektionskontext, sonst product.collections.first (nicht „all“).
+  - Bewusst KEIN zweites Product/ProductGroup: das erzeugt Shopify selbst.
+  - Versand (OfferShippingDetails) bewusst nicht ausgegeben: Shopifys Offer-Knoten lassen sich ohne Eingriff
+    in dessen Produkt-JSON nicht sauber verknüpfen. Rückgabe-Richtlinie steht shopweit am AutoPartsStore (Startseite).
+{%- endcomment -%}
+{%- liquid
+  assign pss_bc = nil
+  if request.page_type == 'product'
+    if collection
+      assign pss_bc = collection
+    else
+      assign pss_first = product.collections.first
+      if pss_first and pss_first.handle != 'all'
+        assign pss_bc = pss_first
+      endif
+    endif
+  elsif request.page_type == 'collection'
+    assign pss_bc = collection
+  endif
+-%}
+{%- if request.page_type == 'product' or request.page_type == 'collection' and pss_bc -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Startseite", "item": {{ request.origin | append: '/' | json }}}
+    {%- if pss_bc -%}
+    ,{"@type": "ListItem", "position": 2, "name": {{ pss_bc.title | strip_html | json }}, "item": {{ request.origin | append: '/collections/' | append: pss_bc.handle | json }}}
+    {%- endif -%}
+    {%- if request.page_type == 'product' -%}
+    ,{"@type": "ListItem", "position": {% if pss_bc %}3{% else %}2{% endif %}, "name": {{ product.title | strip_html | json }}, "item": {{ request.origin | append: '/products/' | append: product.handle | json }}}
+    {%- endif %}
+  ]
+}
+</script>
+{%- endif -%}
