@@ -258,3 +258,10 @@ Betrifft 63 aktive Produkte (ohne die 2 Testprodukte, Entwürfe unverändert). J
   - strukturierte Daten (BreadcrumbList, Rückgaberegel, FAQ-Fix in `sections/faq.liquid`)
   - `pss-produktsicherheit` in Sie-Form
   - Sicherungen unter `theme-conversion/`
+
+## Rabattcode XMAS20 (10.11.2026, Auftrag Inhaber)
+- DiscountCodeNode 1546135273568, Titel „Weihnachts-Special 2026 – 20 % (ohne Interieur-Pakete)“, Code **XMAS20**.
+- 20 % auf 57 aktive Produkte (Lenkräder, Interieur-Teile, Schlüsselcover, Pflege). Nicht enthalten: alle Produkte vom Typ Interieur-Paket, darunter die Carbon Interieur Sets.
+- Gültig 10.11.2026 00:00 bis 31.12.2026 23:59 (Berlin), einmal pro Kunde, kombinierbar nur mit Versandrabatten.
+- Neue Produkte werden NICHT automatisch einbezogen und müssen von Hand ergänzt werden.
+- Entfernen: Rabatt im Admin deaktivieren oder löschen.
