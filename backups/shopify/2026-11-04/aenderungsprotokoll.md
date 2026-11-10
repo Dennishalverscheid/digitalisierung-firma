@@ -265,3 +265,4 @@ Betrifft 63 aktive Produkte (ohne die 2 Testprodukte, Entwürfe unverändert). J
 - Gültig 10.11.2026 00:00 bis 31.12.2026 23:59 (Berlin), einmal pro Kunde, kombinierbar nur mit Versandrabatten.
 - Neue Produkte werden NICHT automatisch einbezogen und müssen von Hand ergänzt werden.
 - Entfernen: Rabatt im Admin deaktivieren oder löschen.
+- 10.11.: Die 3 Carbon Interieur Sets (7536843456608, 7536844963936, 7547781709920) auf Wunsch des Inhabers in XMAS20 aufgenommen. Gilt jetzt für 60 Produkte, Innenraum-Pakete und Design Editionen weiterhin ausgenommen.

@@ -67,6 +67,7 @@ Autosattlerei/Manufaktur in Bergkamen: Carbon-/Leder-/Alcantara-Lenkräder (Vere
 10. Danach Marketing: Tracking (GA4/Consent Mode), Google Merchant Center + Shopping, Social Content (Vorher-Nachher-Reels), Essen Motor Show 2026, Newsletter
 
 ## Arbeitsweise (vereinbart)
+- **Rabattcode XMAS20** (DiscountCodeNode 1546135273568, bis 31.12.2026): Jedes NEUE Produkt außer Innenraum-Pakete und Design Editionen beim Anlegen per `discountCodeBasicUpdate` (`productsToAdd`) aufnehmen. So hat es der Inhaber am 10.11. festgelegt.
 - Vor jeder Änderungsrunde Sicherung + Eintrag im Änderungsprotokoll
 - Erst Testlauf an 2 Produkten, dann Rollout nach Freigabe
 - Theme-Änderungen nur an unveröffentlichter Kopie; Inhaber veröffentlicht selbst
