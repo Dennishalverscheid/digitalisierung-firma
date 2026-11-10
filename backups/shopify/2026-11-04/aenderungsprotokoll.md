@@ -269,3 +269,4 @@ Betrifft 63 aktive Produkte (ohne die 2 Testprodukte, Entwürfe unverändert). J
 - 10.11.: Weihnachts-Banner in der Theme-Kopie „Conversion – Entwurf 09.11.2026“ (`sections/header-group.json`). Neuer Block `announcement-xmas` steht vor „Kostenloser Versand ab 199 €“ und verlinkt auf /collections/lenkrader. Vorher gab es nur den Versand-Block. Nicht live, bis der Inhaber die Kopie veröffentlicht.
 - Newsletter-Entwurf XMAS20: `docs/ps-sattlerei-newsletter-xmas20.md`. Laut Shopify haben nur 41 Kontakte bestätigt eingewilligt.
 - 10.11.: Ankündigungsleiste auf Wunsch des Inhabers NUR mit dem XMAS20-Banner. Block „Kostenloser Versand ab 199 €“ entfernt, ohne Pfeile und ohne Autoplay (Theme-Kopie 188294103136).
+- 10.11.: Hauptmenü symmetrisch: 4 Hauptpunkte (Lenkräder · Interieur | Zubehör · Kontakt). „Manufaktur Bergkamen“ ist jetzt Unterpunkt von Kontakt. Live, betrifft alle Themes.
