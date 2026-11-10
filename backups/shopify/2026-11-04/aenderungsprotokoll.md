@@ -266,3 +266,5 @@ Betrifft 63 aktive Produkte (ohne die 2 Testprodukte, Entwürfe unverändert). J
 - Neue Produkte werden NICHT automatisch einbezogen und müssen von Hand ergänzt werden.
 - Entfernen: Rabatt im Admin deaktivieren oder löschen.
 - 10.11.: Die 3 Carbon Interieur Sets (7536843456608, 7536844963936, 7547781709920) auf Wunsch des Inhabers in XMAS20 aufgenommen. Gilt jetzt für 60 Produkte, Innenraum-Pakete und Design Editionen weiterhin ausgenommen.
+- 10.11.: Weihnachts-Banner in der Theme-Kopie „Conversion – Entwurf 09.11.2026“ (`sections/header-group.json`). Neuer Block `announcement-xmas` steht vor „Kostenloser Versand ab 199 €“ und verlinkt auf /collections/lenkrader. Vorher gab es nur den Versand-Block. Nicht live, bis der Inhaber die Kopie veröffentlicht.
+- Newsletter-Entwurf XMAS20: `docs/ps-sattlerei-newsletter-xmas20.md`. Laut Shopify haben nur 41 Kontakte bestätigt eingewilligt.
